@@ -122,10 +122,6 @@ img {
     width: 90%;
 }
 
-#pag07 li {
-    text-align: center;
-}
-
 section#landing {
     flex-direction: column;
 }
