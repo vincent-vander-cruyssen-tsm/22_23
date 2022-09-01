@@ -17,6 +17,12 @@ h1 {
     margin-bottom: 2em;
 }
 
+hr {
+    border: 0.1em solid;
+    border-radius: 5px;
+    margin-bottom: 2em;
+}
+
 section {
     width: 100%;
     min-height: 100vh;
@@ -29,7 +35,7 @@ section {
 }
 
 section h1 {
-    font-size: 3rem;
+    font-size: 4rem;
     padding: 1em;
     margin-bottom: 0.5em;
 }
@@ -84,7 +90,7 @@ nav ul a {
     color: black;
 }
 
-img:hover, p:hover, h2:hover, h3:hover, li:hover {
+img:hover, p:hover, h1:hover, h2:hover, h3:hover, li:hover {
     background-color: hsla(180, 9%, 54%, 0.3);
 }
 
@@ -122,4 +128,25 @@ img {
 
 section#landing {
     flex-direction: column;
+}
+
+.img-grid {
+    max-width: 60vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.regular {
+    font-weight: 400;
+}
+
+.invert {
+    filter: invert(1);
+}
+
+.img-auto {
+    width: auto;
+    margin: 0 auto;
 }
