@@ -131,6 +131,7 @@ section#landing {
 }
 
 .img-grid {
+    min-width: 50vw;
     max-width: 60vw;
     margin: 0 auto;
     display: grid;
