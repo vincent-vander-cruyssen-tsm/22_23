@@ -12,6 +12,7 @@ body {
     color: hsl(81, 95%, 94%);
     font-family: 'Rubik', sans-serif;
     line-height: 1.5;
+    position: absolute;
 }
 
 .bg-vincent {
