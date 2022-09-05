@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: hsl(0, 11%, 8%);
+    color: hsl(81, 95%, 94%);
+    font-family: 'Rubik', sans-serif;
+    line-height: 1.5;
+}
+
+.bg-vincent {
+    background-color: hsl(0, 11%, 8%);
+    color: hsl(81, 95%, 94%);
+}
+
+section {
+    text-align: center;
+}
+
+h1 {
+    font-size: 8rem;
+    font-weight: 400;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    font-size: 4.5rem;
+    font-weight: 300;
+    margin-bottom: 0.5em;
+}
+
+h3 {
+    font-size: 4rem;
+    margin-bottom: 0.5em;
+}
+
+h4 {
+    font-size: 3rem;
+    margin-bottom: 1em;
+}
+
+p {
+    max-width: 70ch;
+    text-align: left;
+    margin: 0 auto;
+    margin-bottom: 1em;
+}
+
+ul {
+    margin-bottom: 1em;
+}
+
+ul.alignleft {
+    text-align: left;
+}
+
+ul.inwards {
+    padding: 0 8em;
+}
+
+
+li {
+    font-size: 2.25rem;
+    list-style: none;
+    margin-bottom: 0.75em;
+}
+
+.img-grid {
+    max-width: 40vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    gap: 2em;
+}
+
+img {
+    display: block;
+    z-index: 4;
+    filter: drop-shadow(0 0 1em rgba(0, 0, 0, 0.4));
+    transition: transform 110ms ease;
+}
+
+img:hover {
+    z-index: 5;
+    transform: scale(1.75);
+    opacity: 1;
+}
+
+.invert {
+    filter: invert(1);
+}
+
+.tekst {
+    margin-bottom: 2em;
+}
+
+img.smaller {
+    margin: 0 auto;
+    width: 50%;
+}
+
+img:hover, p:hover, h1:hover, h2:hover, h3:hover, h4:hover, li:hover {
+    text-decoration: hsla(180, 9%, 54%, 0.5) underline;
+}
+
+a {
+    color: hsl(180, 85%, 60%) !important;
+}
+
+a:hover {
+    color: hsl(60, 85%, 50%) !important;
+}
+
+.slide-grid {
+    max-width: 80vw;
+    margin: 1em auto;
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+    justify-items: center;
+    align-items: center;
+    gap: 2em;
+}
