@@ -44,7 +44,7 @@ h2 {
 
 h3 {
     font-size: 2.5rem;
-    margin-bottom: 0.5em;
+    margin-bottom: 1em;
 }
 
 h4 {
@@ -52,12 +52,17 @@ h4 {
     margin-bottom: 1em;
 }
 
+h5 {
+    font-size: 1.1rem;
+    text-align: left;
+    padding: 0 15vw;
+}
+
 p {
     font-size: 1.1rem;
-    max-width: 70ch;
     text-align: left;
-    margin: 0 auto;
-    margin-bottom: 1em;
+    padding: 0 15vw;
+    margin-bottom: 2.5em;
 }
 
 ul {
@@ -120,8 +125,11 @@ img.smaller {
     width: 50%;
 }
 
-img:hover, p:hover, h1:hover, h2:hover, h3:hover, h4:hover, li:hover {
-    text-decoration: hsla(180, 9%, 54%, 0.5) underline;
+img:hover, p:hover, h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, li:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 10%;
+    text-decoration-color: hsla(180, 9%, 54%, 0.5);
+    text-underline-offset: 15%;
 }
 
 a {
@@ -156,12 +164,6 @@ a:hover {
     margin: 0;
 }
 
-textarea {
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 1.3rem;
-    line-height: 1.5;
-}
-
 #navigation {
     bottom: 1em;
     width: 20vw;
@@ -186,4 +188,19 @@ a#next {
 
 a#previous {
     left: 3.2rem;
+}
+
+xmp {
+    padding: 0;
+    margin: 0;
+    white-space: pre-line;
+}
+
+mark {
+    text-decoration: underline;
+    text-decoration-thickness: 7.5%;
+    text-decoration-color: yellow;
+    text-underline-offset: 15%;
+    background-color: inherit;
+    padding: 0;
 }

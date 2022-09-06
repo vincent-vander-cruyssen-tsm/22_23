@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=	, initial-scale=1.0">
-    <title>Script Introductie</title>
+    <title>Script HTML Cheat Sheet</title>
     <link rel="stylesheet" href="../../static/css/webslides.css">
     <link rel="stylesheet" href="../../static/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
@@ -27,18 +27,30 @@
         </section>
         <section>
             <h2>Main root</h2>
-            <h3>&lt;html> … &lt;/html></h3>
-            <p>
-            
-            Het HTML &lt;html>-element vertegenwoordigt het root (element op het hoogste niveau) van een HTML-document, dus het
-            wordt ook wel het wortelelement genoemd. Alle andere elementen moeten afstammelingen van dit element zijn.</p>
-           <p>Voorbeeld:</p>
-            <textarea readonly="readonly" rows="4">
-<!DOCTYPE html>
-<html lang="en">
-<head>...</head>
-<body>...</body></textarea>
+            <h3>&lt;html> . . . &lt;/html></h3>
+            <p>Het &lt;html> element vertegenwoordigt de root, element op het hoogste niveau, van een
+                HTML-document, dus het wordt ook wel het <em>root element</em> genoemd. Alle andere elementen
+                <mark>moeten</mark>
+                afstammelingen van dit element zijn.
+            </p>
+            <code>
+                &lt;!DOCTYPE html> <br>
+                &lt;html lang="en"> <br>
+                &lt;head> ... &lt;/head> <br>
+                &lt;body> ... &lt;/body> <br>
+            </code>
         </section>
+        <section>
+            <h2>Document metadata</h2>
+            <h5>&lt;head> . . . &lt;/head></h5>
+            <p>Het &lt;head> element bevat informatie (metadata) over het
+                document, zoals de titel, scripts en stylesheets.</p>
+            <h5>&lt;link></h5>
+<p>Het &lt;link>, of External Resource Link, element specificeert relaties tussen het huidige
+    document en een externe bron. Dit element wordt meestal gebruikt om te linken naar stylesheets,
+    maar wordt ook gebruikt om sitepictogrammen vast te stellen.</p>
+        </section>
+
     </article>
     <script src="../../static/js/jquery-3.6.1.min.js"></script>
     <script src="../../static/js/webslides.js"></script>
