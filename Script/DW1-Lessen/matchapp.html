@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klagroep app</title>
+</head>
+
+<body>
+    <header>
+        <h1>'Klasgroep' app!</h1>
+        <nav>
+            <ul>
+                <li><a href="#intro">Introductie</a></li>
+                <li><a href="#lijstjes">Lijstjes</a></li>
+                <li><a href="#formulier">Formulier</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="intro">
+            <h2>Klaslokaal foto's</h2>
+            <!-- ZO PLAATS IK EEN COMMENT -->
+            <p>Klik hier voor meer <a target="_blank" href="#">foto's van een klaslokaal</a>.
+            </p>
+            <a href="#"><img src="https://source.unsplash.com/random/400x300/?classroom" alt="Een klaslokaal"></a>
+        </section>
+        <section id="lijstjes">
+            <h2>Lijstjes</h2>
+            <h3>Dingen die in een klaslokaal mogen:</h3>
+            <ul>
+                <li>zwijgen</li>
+                <li>luisteren</li>
+                <li>studeren</li>
+            </ul>
+            <figure>
+                <img src="https://source.unsplash.com/random/200x100/?classroom" alt="Een klaslokaal.">
+                <figcaption>Dit klaslokaal is <em>prachtig</em>.</figcaption>
+            </figure>
+            <h3>Dingen die niet in een klaslokaal mogen:</h3>
+            <ol>
+                <li>eten</li>
+                <li>gamen</li>
+                <li>door elkaar praten</li>
+            </ol>
+            <figure>
+                <img src="https://source.unsplash.com/random/200x100/?cave" alt="Een grot.">
+                <figcaption>Dit klaslokaal is <strong>niet zo prettig</strong>.</figcaption>
+            </figure>
+        </section>
+        <section id="formulier">
+            <h2>Klaslokaal formulier</h2>
+            <form action="#">
+                <fieldset>
+                    <legend>De muren van het lokaal zijn:</legend>
+                    <label><input type="radio" name="muren" value="blauw" checked>Blauw</label>
+                    <label><input type="radio" name="muren" value="rood"> Rood</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Wat is er in het lokaal aanwezig?</legend>
+                    <label><input type="checkbox" name="aanwezig" value="stoelen" checked>Stoelen</label>
+                    <label><input type="checkbox" name="aanwezig" value="banken">Banken</label>
+                    <label><input type="checkbox" name="aanwezig" value="projectie">Projectie</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Vrije toevoeging:</legend>
+                    <textarea name="toevoeging" cols="30" rows="10"
+                        placeholder="Hier schrijf ik wat extra benodigdheden"></textarea>
+                </fieldset>
+                <fieldset>
+                    <legend>Mijn ideale klas:</legend>
+                    <input type="text" name="afbeelding" placeholder="URL naar afbeelding" required>
+                </fieldset>
+                <hr>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Vincent Vander Cruyssen - TSM</p>
+    </footer>
+
+</body>
+
+</html>

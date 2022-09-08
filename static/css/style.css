@@ -205,3 +205,9 @@ mark {
     background-color: inherit;
     padding: 0;
 }
+
+code {
+    padding: 0 20vw;
+    text-align: left;
+    white-space: pre-line;
+}

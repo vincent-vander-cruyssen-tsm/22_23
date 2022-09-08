@@ -34,21 +34,102 @@
                 afstammelingen van dit element zijn.
             </p>
             <code>
-                &lt;!DOCTYPE html> <br>
-                &lt;html lang="en"> <br>
-                &lt;head> ... &lt;/head> <br>
-                &lt;body> ... &lt;/body> <br>
+                &lt;!DOCTYPE html>
+                &lt;html lang="en">
+                &lt;head> ... &lt;/head>
+                &lt;body> ... &lt;/body> 
+
             </code>
         </section>
         <section>
-            <h2>Document metadata</h2>
+            <h2>Document metadata {data over data}</h2>
             <h5>&lt;head> . . . &lt;/head></h5>
-            <p>Het &lt;head> element bevat informatie (metadata) over het
+            <p>Het head-element bevat informatie (metadata) over het
                 document, zoals de titel, scripts en stylesheets.</p>
             <h5>&lt;link></h5>
-<p>Het &lt;link>, of External Resource Link, element specificeert relaties tussen het huidige
-    document en een externe bron. Dit element wordt meestal gebruikt om te linken naar stylesheets,
-    maar wordt ook gebruikt om sitepictogrammen vast te stellen.</p>
+            <p>Het link-element, of External Resource Link, specificeert relaties tussen het huidige
+                document en een externe bron. Dit element wordt meestal gebruikt om te linken naar stylesheets,
+                maar wordt ook gebruikt om sitepictogrammen vast te stellen.</p>
+            <h5>&lt;meta></h5>
+            <p>Het meta-element vertegenwoordigt metadata die niet kan worden weergegeven door andere meta-gerelateerde
+                elementen. </p>
+            <h5>&lt;style> . . . &lt;/style></h5>
+            <p>Het style-element bevat stijlinformatie voor een document of een deel van een document.</p>
+            <h5>&lt;title> . . . &lt;/title></h5>
+            <p>Het titelelement definieert de titel van het document die wordt weergegeven in de titelbalk van een
+                browser of op het tabblad van een pagina.</p>
+            <code>
+                    &lt;head>
+                    &nbsp;&lt;meta charset="UTF-8">
+                    &nbsp;&lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    &nbsp;&lt;meta name="description" content="Cursus">
+                    &nbsp;&lt;meta name="keywords" content="HTML, CSS, JavaScript">
+                    &nbsp;&lt;meta name="author" content="Vincent Vander Cruyssen">
+                    &nbsp;&lt;title>Mijn webpagina&lt;/title>
+                    &lt;/head> 
+
+                </code>
+        </section>
+        <section>
+            <h2>Document body-element</h2>
+            <h5>&lt;body> . . . &lt;/body></h5>
+            <p>Het body-element vertegenwoordigt de inhoud van een HTML-document. Er kan maar één body-element aanwezig
+                zijn in een document. (Er wordt er maar één weergegeven.)</p>
+            <code>
+                &lt;html>
+                &nbsp; &lt;head>
+                &nbsp; &nbsp; &lt;title>Document titel&lt;/title>
+                &nbsp; &lt;/head>
+                &nbsp; &lt;body>
+                &nbsp; &nbsp; &lt;p>This is a paragraph&lt;/p>
+                &nbsp; &lt;/body>
+                &lt;/html>
+
+            </code>
+        </section>
+        <section>
+            <h2>Document inhoudsstroom <br> {flow content}</h2>
+            <p>De inhoudsstroom omvat de meeste elementen die binnen het body-element kunnen worden geplaatst, inclusief
+                elementen voor inhoudsverdeling, koptitels, tekst, insluiting (embedding), interactie en
+                formulieren. </p>
+            <p>De belangrijkste flow elementen:</p>
+            <code>
+                &lt;a>, &lt;article>, &lt;aside>, &lt;audio>, &lt;b>, &lt;blockquote>, &lt;br>, &lt;button>, &lt;canvas>, &lt;cite>, &lt;code>, &lt;details>, &lt;div>, &lt;em>, &lt;embed>, &lt;fieldset>, &lt;figure>, &lt;footer>, &lt;form>, &lt;h1>, &lt;h2>, &lt;h3>, &lt;h4>, &lt;h5>, &lt;h6>, &lt;header>, &lt;hr>, &lt;i>, &lt;iframe>, &lt;img>, &lt;input>, &lt;label>, &lt;main>, &lt;mark>, &lt;meter>, &lt;nav>, &lt;object>, &lt;ol>, &lt;output>, &lt;p>, &lt;picture>, &lt;pre>, &lt;progress>, &lt;s>, &lt;script>, &lt;section>, &lt;select>, &lt;span>, &lt;strong>, &lt;sub>, &lt;sup>, &lt;svg>, &lt;textarea>, &lt;time>, &lt;ul>, &lt;video>
+
+            </code>
+        </section>
+        <section>
+            <h2>Document inhoudsverdeling <br> {sectioning content}</h2>
+            
+            <p>🌊 Inhoudsverdeling verdeelt of segmenteerd van <mark>alle</mark> inhoud binnen de body. </p>
+            <h5>&lt;header> . . . &lt;/header></h5>
+            <p>Introductie van de inhoud, navigatie, logo, zoekbalk, auteur,...</p>
+            <h5>&lt;nav> . . . &nbsp;&lt;/nav> </h5>
+            <p>Navigatie a.d.h.v. links die verwijzen binnen en/of buiten de pagina.</p>
+            <h5>&lt;main> . . . &lt;/main></h5>
+            <p>Hoofdinhoud, centraal onderwerp van document of applicatie.</p>
+            <h5>&lt;section> . . . &lt;/section></h5>
+            <p>Onderverdelingen van de onderwerpen binnenin de main. Ook <strong>&lt;article> + &lt;aside></strong>.</p>
+            <h5>&lt;footer> . . . &lt;/footer></h5>
+            <p>Voettekst, informatie over auteur, website, gegevens, copyright, links naar gerelateerde documenten.</p>
+        </section>
+        <section>
+            <h2>Kopinhoud <br> {heading content}</h2>
+            <p>🌊 Kopinhoud omschrijft de titel of ondertitel van een onderdeel. <mark>Niet</mark> hetzelfde als het header
+                element. </p>
+            <code>
+                &lt;h1>
+                &lt;h2>
+                &lt;h3>
+                &lt;h4>
+                &lt;h5>
+                &lt;h6>
+
+            </code>
+        </section>
+        <section>
+            <h2>Tekstinhoud <br> {phrasing content}</h2>
+            <p>🌊 Tekstinhoud definieert tekst en de opmaak die deze tekst bevat.</p>
         </section>
 
     </article>
