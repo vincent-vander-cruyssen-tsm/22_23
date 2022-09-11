@@ -56,14 +56,24 @@ h4 {
 h5 {
     font-size: 1.1rem;
     text-align: left;
-    padding: 0 15vw;
 }
 
 p {
     font-size: 1.1rem;
     text-align: left;
-    padding: 0 15vw;
     margin-bottom: 2.5em;
+}
+
+table {
+    border-collapse: separate;
+}
+
+h5, p, table {
+    padding: 0 15vw !important;
+}
+
+td {
+    text-align: left;
 }
 
 ul {
@@ -73,6 +83,10 @@ ul {
 
 .alignleft {
     text-align: left;
+}
+
+.alignright {
+    text-align: right;
 }
 
 ul.inwards {
@@ -130,7 +144,7 @@ img:hover, p:hover, h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, li:hover {
     text-decoration: underline;
     text-decoration-thickness: 10%;
     text-decoration-color: hsla(180, 9%, 54%, 0.5);
-    text-underline-offset: 0%;
+    text-underline-offset: 5%;
 }
 
 a {
