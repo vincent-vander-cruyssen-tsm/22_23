@@ -130,7 +130,7 @@ img:hover, p:hover, h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, li:hover {
     text-decoration: underline;
     text-decoration-thickness: 10%;
     text-decoration-color: hsla(180, 9%, 54%, 0.5);
-    text-underline-offset: 15%;
+    text-underline-offset: 0%;
 }
 
 a {
