@@ -12,13 +12,29 @@
 </head>
 
 <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#html">html</a></li>
+                <li><a href="#meta">meta</a></li>
+                <li><a href="#body">body</a></li>
+                <li><a href="#flow">flow</a></li>
+                <li><a href="#inhoud">inhoud</a></li>
+                <li><a href="#koppen">koppen</a></li>
+                <li><a href="#tekst">tekst</a></li>
+                <li><a href="#embed">embed</a></li>
+                <li><a href="#interactief">interactief</a></li>
+                <li><a href="#form">form</a></li>
+            </ul>
+        </nav>
+    </header>
     <article id="webslides">
         <section>
             <h1>Multimedia <u>Script</u> Webdesign</h1>
             <h2>HTML Cheat Sheet</h2>
         </section>
         <section>
-            <h2>Main root</h2>
+            <h2 id="html">Main root</h2>
             <h3>&lt;html> . . . &lt;/html></h3>
             <p>Het &lt;html> element vertegenwoordigt de root, element op het hoogste niveau, van een
                 HTML-document, dus het wordt ook wel het <em>root element</em> genoemd. Alle andere elementen
@@ -32,9 +48,8 @@
                 &lt;body> ... &lt;/body> 
 
             </code>
-        </section>
-        <section>
-            <h2>Document metadata {data over data}</h2>
+
+            <h2 id="meta">Document metadata {data over data}</h2>
             <h5>&lt;head> . . . &lt;/head></h5>
             <p>Het head-element bevat informatie (metadata) over het
                 document, zoals de titel, scripts en stylesheets.</p>
@@ -61,9 +76,8 @@
                     &lt;/head> 
 
                 </code>
-        </section>
-        <section>
-            <h2>Document body-element</h2>
+
+            <h2 id="body">Document body-element</h2>
             <h5>&lt;body> . . . &lt;/body></h5>
             <p>Het body-element vertegenwoordigt de inhoud van een HTML-document. Er kan maar één body-element aanwezig
                 zijn in een document. (Er wordt er maar één weergegeven.)</p>
@@ -78,9 +92,8 @@
                 &lt;/html>
 
             </code>
-        </section>
-        <section>
-            <h2>Document inhoudsstroom <br> {flow content}</h2>
+
+            <h2 id="flow">Document inhoudsstroom <br> {flow content}</h2>
             <p>De inhoudsstroom omvat de meeste elementen die binnen het body-element kunnen worden geplaatst, inclusief
                 elementen voor inhoudsverdeling, koptitels, tekst, insluiting (embedding), interactie en
                 formulieren. </p>
@@ -89,9 +102,8 @@
                 &lt;a>, &lt;article>, &lt;aside>, &lt;audio>, &lt;b>, &lt;blockquote>, &lt;br>, &lt;button>, &lt;canvas>, &lt;cite>, &lt;code>, &lt;details>, &lt;div>, &lt;em>, &lt;embed>, &lt;fieldset>, &lt;figure>, &lt;footer>, &lt;form>, &lt;h1>, &lt;h2>, &lt;h3>, &lt;h4>, &lt;h5>, &lt;h6>, &lt;header>, &lt;hr>, &lt;i>, &lt;iframe>, &lt;img>, &lt;input>, &lt;label>, &lt;main>, &lt;mark>, &lt;meter>, &lt;nav>, &lt;object>, &lt;ol>, &lt;output>, &lt;p>, &lt;picture>, &lt;pre>, &lt;progress>, &lt;s>, &lt;script>, &lt;section>, &lt;select>, &lt;span>, &lt;strong>, &lt;sub>, &lt;sup>, &lt;svg>, &lt;textarea>, &lt;time>, &lt;ul>, &lt;video>
 
             </code>
-        </section>
-        <section>
-            <h2>Document inhoudsverdeling <br> {sectioning content}</h2>
+
+            <h2 id="inhoud">Document inhoudsverdeling <br> {sectioning content}</h2>
             <p>🌊 Inhoudsverdeling verdeelt of segmenteert <mark>alle</mark> inhoud binnen de body. </p>
             <h5>&lt;header> . . . &lt;/header></h5>
             <p>Introductie van de inhoud, navigatie, logo, zoekbalk, auteur,...</p>
@@ -103,9 +115,8 @@
             <p>Onderverdelingen van de onderwerpen binnenin de main. Ook <strong>&lt;article> + &lt;aside></strong>.</p>
             <h5>&lt;footer> . . . &lt;/footer></h5>
             <p>Voettekst, informatie over auteur, website, gegevens, copyright, links naar gerelateerde documenten.</p>
-        </section>
-        <section>
-            <h2>Kopinhoud <br> {heading content}</h2>
+
+            <h2 id="koppen">Kopinhoud <br> {heading content}</h2>
             <p>🌊 Kopinhoud omschrijft de titel of ondertitel van een onderdeel. <mark>Niet</mark> hetzelfde als het
                 header
                 element. </p>
@@ -118,47 +129,44 @@
                 &lt;h6> . . . &lt;/h6>
 
             </code>
-        </section>
-        <section>
-            <h2>Tekstinhoud <br> {phrasing content}</h2>
+
+            <h2 id="tekst">Tekstinhoud <br> {phrasing content}</h2>
             <p>🌊 Tekstinhoud definieert tekst en de opmaak die deze bevat.</p>
             <code>
                 &lt;a>, &lt;abbr>, &lt;b>, &lt;br>, &lt;button>, &lt;cite>, &lt;code>, &lt;data>, &lt;datalist>, &lt;em>, &lt;i>, &lt;iframe>, &lt;img>, &lt;input>, &lt;label>, &lt;mark>, &lt;meter>, &lt;output>, &lt;progress>, &lt;s>, &lt;select>, &lt;small>, &lt;span>, &lt;strong>, &lt;sub>, &lt;sup>, &lt;textarea>, &lt;time>, &lt;wbr> 
 
             </code>
-        </section>
-        <section>
-            <h2>Ingesloten inhoud <br> {embedded content}</h2>
+
+            <h2 id="embed">Ingesloten inhoud <br> {embedded content}</h2>
             <p>🌊 Ingesloten elementen importeren inhoud uit een andere bron of document.</p>
             <code>
                 &lt;audio>, &lt;canvas>, &lt;embed>, &lt;iframe>, &lt;img>, &lt;math>, &lt;object>, &lt;picture>, &lt;svg>, &lt;video>
 
             </code>
-        </section>
-        <section>
-            <h2>Interactieve inhoud <br> {interactive content}</h2>
+
+            <h2 id="interactief">Interactieve inhoud <br> {interactive content}</h2>
             <p>🌊 Interactieve elementen zijn specifiek ontworpen voor gebruikersinteractie. </p>
             <code>
                 &lt;a>, &lt;button>, &lt;details>, &lt;embed>, &lt;iframe>, &lt;label>, &lt;select>
 
             </code>
-        </section>
-        <section>
-            <h2>Formulier-gerelateerde inhoud <br> {form-associated content}</h2>
-            <p>🌊 Elementen binnenin een formulier met interactieve besturingselementen voor het indienen van informatie, omsloten in het &lt;form> element. </p>
+
+            <h2 id="form">Formulier-gerelateerde inhoud <br> {form-associated content}</h2>
+            <p>🌊 Elementen binnenin een formulier met interactieve besturingselementen voor het indienen van
+                informatie, omsloten in het &lt;form> element. </p>
             <code>
                 &lt;button>, &lt;fieldset>, &lt;input>, &lt;label>, &lt;meter>, &lt;object>, &lt;output>, &lt;progress>, &lt;select>, &lt;textarea>
 
             </code>
-        
+
         </section>
 
     </article>
-    <script src="../../static/js/jquery-3.6.1.min.js"></script>
+    <!-- <script src="../../static/js/jquery-3.6.1.min.js"></script>
     <script src="../../static/js/webslides.js"></script>
     <script>
         window.ws = new WebSlides();
-    </script>
+    </script> -->
 </body>
 
 </html>
