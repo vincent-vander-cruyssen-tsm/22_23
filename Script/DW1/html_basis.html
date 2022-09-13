@@ -12,13 +12,34 @@
 </head>
 
 <body>
+    <header>
+        <nav>
+            <ol>
+                <a href="#home">
+                    <li>home</li>
+                </a>
+                <a href="#basis">
+                    <li>basis</li>
+                </a>
+                <a href="#element">
+                    <li>element</li>
+                </a>
+                <a href="#nesten">
+                    <li>nesten</li>
+                </a>
+                <a href="#document">
+                    <li>document</li>
+                </a>
+            </ol>
+        </nav>
+    </header>
     <article id="webslides">
-        <section>
+        <section id="home">
             <h1>Multimedia <u>Script</u> Webdesign</h1>
             <h2>HTML Basis</h2>
         </section>
         <section>
-            <h2>HTML basis</h2>
+            <h2 id="basis">HTML basis</h2>
             <p>HTML (HyperText Markup Language) is de code die wordt gebruikt om een webpagina en de inhoud ervan te
                 structureren. Inhoud kan bijvoorbeeld worden gestructureerd in een reeks alinea's, een lijst met
                 opsommingstekens of met afbeeldingen en gegevenstabellen. </p>
@@ -36,11 +57,11 @@
             <p>Als we willen dat de regel op zichzelf staat, kunnen we specificeren dat het een alinea is door deze in
                 alinea-tags te plaatsen:</p>
             <code>
-                &lt;p>My cat is very grumpy&lt;/p> <br>
+                &lt;p>Mijn kat is nors&lt;/p> <br>
             </code>
         </section>
         <section>
-            <h2>Anatomie van een HTML-element</h2>
+            <h2 id="element">Anatomie van een HTML-element</h2>
             <p>Laten we dit alinea-element nog wat verder onderzoeken.</p>
             <img src="img/html_element_ontledng.png" alt="png" class="smaller mgb">
             <h5>De belangrijkste onderdelen van een element zijn als volgt:</h5>
@@ -72,8 +93,90 @@
             </ol>
             <p>Elementen kunnen ook attributen hebben die er als volgt uitzien:</p>
             <img src="img/html_element_attributen.png" alt="png" class="smaller mgb">
-            <p>Attributen bevatten extra informatie over het element dat u niet in de daadwerkelijke inhoud wilt laten verschijnen. In de afbeelding hierboven refereert het atribuut href naar een URL, id heeft de waarde van een identiteit, src refereert naar een afbeelding,...</p>
-            
+            <p>Attributen bevatten extra informatie over het element dat u niet in de daadwerkelijke inhoud wilt laten
+                verschijnen. In de afbeelding hierboven refereert het atribuut href naar een URL, id heeft de waarde van
+                een identiteit, src refereert naar een afbeelding,...</p>
+
+        </section>
+
+        <section>
+            <h2 id="nesten">Elementen nesten</h2>
+            <p>Je kunt ook elementen in andere elementen plaatsen - dit wordt nesten genoemd. </p>
+            <code>
+                &lt;p>Mijn kat is &lt;strong>zeer&lt;/strong> nors&lt;/p> <br>
+                Mijn kat is <strong>zeer</strong> nors  <br>
+            </code>
+            <p>U moet er echter voor zorgen dat uw elementen correct zijn genest. In het bovenstaande voorbeeld hebben
+                we <mark>eerst</mark> het element &lt;p> geopend en <mark>daarna</mark> het element &lt;strong>; daarom
+                moeten we <mark>eerst</mark> het &lt;strong>-element sluiten en <mark>daarna</mark> het &lt;p>-element.
+            </p>
+            <p>De elementen moeten correct openen en sluiten, zodat ze duidelijk binnen of buiten elkaar liggen. Als ze
+                elkaar overlappen, probeert uw webbrowser zo goed mogelijk te raden wat u probeerde te zeggen, wat tot
+                onverwachte resultaten kan leiden.</p>
+            <h2>Lege elementen</h2>
+            <p>Sommige elementen hebben geen inhoud en worden lege elementen genoemd. Neem het &lt;img>-element dat we
+                al in onze HTML-pagina hebben:</p>
+            <code>
+                &lt;img src="images/icon.png" alt="Een icoontje"> <br>
+            </code>
+            <p>Dit bevat twee attributen, maar er is <mark>geen</mark> afsluitende &lt;/img>-tag. </p>
+        </section>
+        <section>
+            <h2 id="document">Anatomie van een HTML-document</h2>
+            <code>
+                &lt;!DOCTYPE html>
+                &lt;html lang="en-US">
+                &nbsp;&lt;head>
+                &nbsp;&nbsp;&lt;meta charset="UTF-8">
+                &nbsp;&nbsp;&lt;meta name="viewport" content="width=device-width">
+                &nbsp;&nbsp;&lt;title>Mijn paginatitel&lt;/title>
+                &nbsp;&lt;/head>
+                &nbsp;&lt;body>
+                &nbsp;&nbsp;&lt;h1>Een koptitel&lt;/h1>
+                &nbsp;&nbsp;&lt;p>Een stukje tekst. &lt;/p>
+                &nbsp;&nbsp;&lt;img src="images/afbeelding.jpg" alt="Mijn afbeelding">
+                &nbsp;&lt;/body>
+                &lt;/html>
+
+            </code>
+           <h5>Hier hebben we het volgende:</h5>
+            <ul>
+                <li>
+                    <p>&lt;!DOCTYPE html> — doctype. Het is een verplichte inleiding. doctype zorgt ervoor dat de browser zijn best doet om de relevante specificaties te volgen.</p>
+                </li>
+                <li>
+                    <p>&lt;html>&lt;/html> — het &lt;html>-element. Dit element omhult alle inhoud op de hele pagina en
+                        wordt soms het root-element genoemd. Het bevat ook het lang-attribuut, waarmee de taal
+                        van de inhoud wordt ingesteld.</p>
+                </li>
+                <li>
+                    <p>&lt;head>&lt;/head> — het &lt;head>-element. Dit element fungeert als een container voor alle
+                        dingen die u op de HTML-pagina wilt opnemen die niet de inhoud zijn die u aan de kijkers van uw
+                        pagina laat zien. Dit omvat zaken als trefwoorden en een paginabeschrijving die u in
+                        zoekresultaten wilt weergeven, CSS om inhoud op te maken en meer.</p>
+                </li>
+                <li>
+                    <p>&lt;meta charset="UTF-8"> — Dit element stelt de tekenset die uw document moet gebruiken in op
+                        UTF-8, dat de meeste tekens uit de overgrote meerderheid van de geschreven talen bevat. In wezen
+                        kan het nu alle tekstuele inhoud aan die u erop kunt plaatsen. </p>
+                </li>
+                <li>
+                    <p>&lt;meta name="viewport" content="width=device-width"> — Dit viewport-element zorgt ervoor dat de
+                        pagina wordt weergegeven op de breedte van de viewport, waardoor wordt voorkomen dat mobiele
+                        browsers pagina's verkleinen naar de viewport.</p>
+                </li>
+                <li>
+                    <p>&lt;title>&lt;/title> — het &lt;title>-element. Hiermee wordt de titel van uw pagina ingesteld.
+                        Dit is de titel die wordt weergegeven in het browsertabblad waarin de pagina is geladen. Het
+                        wordt ook gebruikt om de pagina te beschrijven wanneer u een bookmark maakt of er een favoriet
+                        van maakt.</p>
+                </li>
+                <li>
+                    <p>&lt;body>&lt;/body> — het &lt;body>-element. Dit bevat alle inhoud die u aan internetgebruikers
+                        wilt laten zien wanneer ze uw pagina bezoeken, of dat nu tekst, afbeeldingen, video's, games,
+                        afspeelbare audiotracks of wat dan ook is.</p>
+                </li>
+            </ul>
         </section>
 
     </article>
