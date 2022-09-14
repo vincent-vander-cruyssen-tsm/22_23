@@ -43,8 +43,19 @@ body {
 }
 
 section {
+    border-top: 4px radial-gradient(ellipse at center, rgba(0, 20, 80, 0.2) 0, rgba(255, 255, 255, 0) 75%);
+    min-height: 40vh;
     padding: 0;
     text-align: center;
+}
+
+section#home {
+    min-height: 100vh;
+}
+
+hr {
+    background: radial-gradient(var(--hcolor1), hsla(0, 0%, 100%, 0) 75%);
+    height: 0.1em;
 }
 
 h1 {
@@ -58,6 +69,17 @@ h2 {
     font-size: 3rem;
     font-weight: 400;
     margin-bottom: 1em;
+}
+
+h2::before {
+    content: '#';
+    font-size: 2rem;
+    opacity: 0.2;
+}
+
+.halfsize {
+    font-size: calc(100% * 1 / 3);
+    opacity: 0.5;
 }
 
 h3 {
@@ -78,10 +100,12 @@ h5 {
 
 p {
     font-size: 1rem;
-    max-width: 120ch;
     text-align: left;
-    margin: 0 auto;
     margin-bottom: 2.5em;
+}
+
+h5, p {
+    padding: 0 25%;
 }
 
 p:last-child {
@@ -91,10 +115,6 @@ p:last-child {
 table {
     margin: 0;
     border-collapse: separate;
-}
-
-h5, p, table {
-    padding: 0 15vw !important;
 }
 
 td {
@@ -179,11 +199,14 @@ img.mgb {
 img:hover, p:hover, h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, li:hover, code:hover {
     text-decoration: underline;
     text-decoration-thickness: 10%;
-    text-decoration-color: var(--hcolor1);
     text-underline-offset: 5%;
+    text-decoration-color: var(--hcolor1);
 }
 
 a {
+    text-decoration: underline;
+    text-decoration-thickness: 10%;
+    text-underline-offset: 5%;
     color: var(--ucolor1) !important;
     cursor: pointer;
 }
@@ -250,21 +273,23 @@ xmp {
 
 mark {
     text-decoration: underline;
-    text-decoration-thickness: 7.5%;
-    text-decoration-color: yellow;
+    text-decoration-thickness: 10%;
     text-underline-offset: 15%;
+    text-decoration-color: hsl(25, 100%, 50%);
     background-color: inherit;
     padding: 0;
 }
 
 code {
-    font-size: 0.9rem;
     background-color: var(--hcolor1);
-    padding: 0 5vw;
-    margin: 0 auto;
-    margin-bottom: 2.5em;
+    font-size: 0.9rem;
     text-align: left;
     white-space: pre-line;
+    border-radius: 0.5ch;
+    max-width: 100ch;
+    padding: 0 5%;
+    margin: 0 auto;
+    margin-bottom: 2.5em;
 }
 
 header {
@@ -306,7 +331,7 @@ header nav ol a:hover {
     background-color: var(--hcolor2);
 }
 
-button#theme {
+button#themetoggle {
     background-image: linear-gradient(45deg, black 52%, white 50%);
     background-repeat: no-repeat;
     position: fixed;
@@ -317,4 +342,5 @@ button#theme {
     width: 1em;
     height: 1em;
     border-radius: 50%;
+    z-index: 999;
 }

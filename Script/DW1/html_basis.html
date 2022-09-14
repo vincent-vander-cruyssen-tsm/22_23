@@ -14,7 +14,6 @@
 <body>
 
     <header>
-        <button id="theme" onclick="themetoggle()"></button>
         <nav>
             <ol>
                 <a href="#home">
@@ -35,13 +34,13 @@
             </ol>
         </nav>
     </header>
-    <article id="webslides">
+    <article id="webslides" class="noslides">
         <section id="home">
             <h1>Multimedia <u>Script</u> Webdesign</h1>
             <h2>HTML Basis</h2>
         </section>
-        <section>
-            <h2 id="basis">HTML basis</h2>
+        <section id="basis">
+            <h2>HTML basis</h2>
             <p>HTML (HyperText Markup Language) is de code die wordt gebruikt om een webpagina en de inhoud ervan te
                 structureren. Inhoud kan bijvoorbeeld worden gestructureerd in een reeks alinea's, een lijst met
                 opsommingstekens of met afbeeldingen en gegevenstabellen. </p>
@@ -62,8 +61,8 @@
                 &lt;p>Mijn kat is nors&lt;/p> <br>
             </code>
         </section>
-        <section>
-            <h2 id="element">Anatomie van een HTML-element</h2>
+        <section id="element">
+            <h2>Anatomie van een HTML-element</h2>
             <p>Laten we dit alinea-element nog wat verder onderzoeken.</p>
             <img src="img/html_element_ontledng.png" alt="png" class="smaller mgb">
             <h5>De belangrijkste onderdelen van een element zijn als volgt:</h5>
@@ -98,11 +97,9 @@
             <p>Attributen bevatten extra informatie over het element dat u niet in de daadwerkelijke inhoud wilt laten
                 verschijnen. In de afbeelding hierboven refereert het atribuut href naar een URL, id heeft de waarde van
                 een identiteit, src refereert naar een afbeelding,...</p>
-
         </section>
-
-        <section>
-            <h2 id="nesten">Elementen nesten</h2>
+        <section id="nesten">
+            <h2>Elementen nesten</h2>
             <p>Je kunt ook elementen in andere elementen plaatsen - dit wordt nesten genoemd. </p>
             <code>
                 &lt;p>Mijn kat is &lt;strong>zeer&lt;/strong> nors&lt;/p> <br>
@@ -123,8 +120,8 @@
             </code>
             <p>Dit bevat twee attributen, maar er is <mark>geen</mark> afsluitende &lt;/img>-tag. </p>
         </section>
-        <section>
-            <h2 id="document">Anatomie van een HTML-document</h2>
+        <section id="document">
+            <h2>Anatomie van een HTML-document</h2>
             <code>
                 &lt;!DOCTYPE html>
                 &lt;html lang="en-US">

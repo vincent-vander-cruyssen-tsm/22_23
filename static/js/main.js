@@ -1,4 +1,7 @@
-function themetoggle() {
-    var element = document.body;
-    element.classList.toggle("lightmode");
-}
+$('header').after('<button id="themetoggle"></button>');
+
+$("#themetoggle").click(function () {
+    $("body").toggleClass("lightmode");
+});
+
+$(".noslides section").after("<hr>");
