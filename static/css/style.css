@@ -142,7 +142,7 @@ li {
 img {
     display: block;
     z-index: 2;
-    filter: drop-shadow(0 0 1em rgba(0, 0, 0, 0.4));
+    filter: drop-shadow(0 0 1em hsla(0, 0%, 0%, 0.1));
     transition: transform 110ms ease;
 }
 
