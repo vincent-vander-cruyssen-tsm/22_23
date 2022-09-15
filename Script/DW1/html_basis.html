@@ -16,19 +16,64 @@
         <nav>
             <ol>
                 <a href="#home">
-                    <li>home</li>
+                    <li>HTML</li>
                 </a>
                 <a href="#basis">
-                    <li>basis</li>
+                    <li>Wat?</li>
                 </a>
                 <a href="#element">
-                    <li>element</li>
+                    <li>Element</li>
                 </a>
                 <a href="#nesten">
-                    <li>nesten</li>
+                    <li>Nesten</li>
                 </a>
                 <a href="#document">
-                    <li>document</li>
+                    <li>Document</li>
+                </a>
+                <a href="#cheat">
+                    <li>Spiekbriefje</li>
+                </a>
+                <a href="#html">
+                    <li>&lt;html></li>
+                </a>
+                <a href="#meta">
+                    <li>&lt;meta></li>
+                </a>
+                <a href="#body">
+                    <li>&lt;body></li>
+                </a>
+                <a href="#inhoud">
+                    <li>Verdeling</li>
+                </a>
+                <a href="#flow">
+                    <li>Stroom</li>
+                </a>
+                <a href="#koppen">
+                    <li>&lt;h1>,&lt;h2>,...</li>
+                </a>
+                <a href="#paragraaf">
+                    <li>&lt;p></li>
+                </a>
+                <a href="#lijstjes">
+                    <li>&lt;ul>,&lt;ol></li>
+                </a>
+                <a href="#tekst">
+                    <li>Tekst</li>
+                </a>
+                <a href="#anchor">
+                    <li>&lt;a></li>
+                </a>
+                <a href="#embed">
+                    <li>Embed</li>
+                </a>
+                <a href="#interactief">
+                    <li>Interactief</li>
+                </a>
+                <a href="#form">
+                    <li>Formulier</li>
+                </a>
+                <a href="#attributen">
+                    <li>Attributen</li>
                 </a>
             </ol>
         </nav>
@@ -36,14 +81,30 @@
     <article id="webslides" class="noslides">
         <section id="home">
             <h1>Multimedia <u>Script</u> Webdesign</h1>
-            <h2>HTML Basis</h2>
+            <h2>HTML in het kort...</h2>
+            <p>HTML (HyperText Markup Language) is de meest elementaire bouwsteen van het web. Het definieert de
+                betekenis en structuur van webcontent (inhoud). Naast HTML worden over het algemeen andere technologieën
+                gebruikt om het uiterlijk (CSS) of de functionaliteit/het gedrag (JavaScript) van een
+                webpagina te beschrijven. </p>
+            <p>"Hypertext" verwijst naar links die webpagina's met elkaar verbinden, hetzij binnen een website
+                of naar andere websites. Links zijn een fundamenteel aspect van het web. Door inhoud naar het internet
+                te
+                uploaden en deze te koppelen aan pagina's die door andere mensen zijn gemaakt, wordt u een actieve
+                deelnemer aan het World Wide Web.</p>
+            <p>HTML gebruikt "opmaak" om tekst, afbeeldingen en andere inhoud aan te duiden voor weergave in een
+                webbrowser. HTML-opmaak bevat speciale "elementen" zoals &lt;head>, &lt;title>, &lt;body>, &lt;header>,
+                &lt;footer>, &lt;section>, &lt;p>, &lt;div>, &lt;span>, &lt; img>, &lt;nav>, &lt;video>,
+                &lt;ul>, &lt;ol> , &lt;li> en vele anderen.</p>
+            <p>Een HTML-element wordt van andere tekst in een document gescheiden door "tags", die bestaan uit de
+                elementnaam omringd door "<" en ">" . De conventie, en de gewoonte, is om tags in kleine letters te
+                    schrijven.</p>
+                    <p>Hieronder vind je een volledige uiteenzetting van HTML. </p>
         </section>
         <section id="basis">
-            <h2>HTML basis</h2>
+            <h2>Wat is HTML?</h2>
             <p>HTML (HyperText Markup Language) is de code die wordt gebruikt om een webpagina en de inhoud ervan te
                 structureren. Inhoud kan bijvoorbeeld worden gestructureerd in een reeks alinea's, een lijst met
                 opsommingstekens of met afbeeldingen en gegevenstabellen. </p>
-            <h2>Wat is HTML?</h2>
             <p>HTML is een opmaaktaal die de structuur van inhoud van een website definieert. HTML bestaat uit een reeks
                 elementen
                 die u gebruikt om verschillende delen van de inhoud in te sluiten of in te pakken, zodat deze op een
@@ -178,7 +239,211 @@
                 </li>
             </ul>
         </section>
+        <section id="cheat">
+            <h1>HTML Spiekbriefje</h1>
+        </section>
+        <section id="html">
 
+            <h2>Main root <span class="halfsize">{basiselement}</span></h2>
+            <h5>&lt;html> . . . &lt;/html></h5>
+            <p>Het &lt;html> element vertegenwoordigt de root, het element op het hoogste niveau, van een HTML-document,
+                dus het wordt ook wel het <em>root element</em> genoemd. Alle andere elementen
+                <mark>moeten</mark>
+                afstammelingen van dit element zijn.
+            </p>
+            <code>
+                &lt;!DOCTYPE html>
+                <strong>&lt;html lang="en"></strong>
+                &nbsp;&lt;head> ... &lt;/head>
+                &nbsp;&lt;body> ... &lt;/body> 
+                <strong>&lt;/html></strong>
+
+            </code>
+        </section>
+        <section id="meta">
+            <h2>Document metadata <span class="halfsize">{data over data}</span></h2>
+            <h5>&lt;head> . . . &lt;/head></h5>
+            <p>Het head-element bevat informatie (metadata) over het
+                document, zoals de titel, scripts en stylesheets.</p>
+            <h5>&lt;link></h5>
+            <p>Het link-element, of External Resource Link, specificeert relaties tussen het huidige
+                document en een externe bron. Dit element wordt meestal gebruikt om te linken naar stylesheets,
+                maar wordt ook gebruikt om sitepictogrammen vast te stellen.</p>
+            <h5>&lt;meta></h5>
+            <p>Het meta-element vertegenwoordigt metadata die niet kan worden weergegeven door andere meta-gerelateerde
+                elementen. </p>
+            <h5>&lt;style> . . . &lt;/style></h5>
+            <p>Het style-element bevat stijlinformatie voor een document of een deel van een document.</p>
+            <h5>&lt;title> . . . &lt;/title></h5>
+            <p>Het titelelement definieert de titel van het document die wordt weergegeven in de titelbalk van een
+                browser of op het tabblad van een pagina.</p>
+            <code>
+                    &lt;head>
+                    &nbsp;&lt;meta charset="UTF-8">
+                    &nbsp;&lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    &nbsp;&lt;meta name="description" content="Cursus">
+                    &nbsp;&lt;meta name="keywords" content="HTML, CSS, JavaScript">
+                    &nbsp;&lt;meta name="author" content="Vincent Vander Cruyssen">
+                    &nbsp;&lt;title>Mijn webpagina&lt;/title>
+                    &lt;/head>
+
+            </code>
+        </section>
+        <section id="body">
+            <h2>Document body-element</h2>
+            <h5>&lt;body> . . . &lt;/body></h5>
+            <p>Het body-element vertegenwoordigt de inhoud van een HTML-document. Er kan maar één body-element
+                aanwezig
+                zijn in een document. (Er wordt er maar één weergegeven.)</p>
+            <code>
+                &lt;html>
+                &nbsp; &lt;head>
+                &nbsp; &nbsp; &lt;title>Document titel&lt;/title>
+                &nbsp; &lt;/head>
+                &nbsp; &lt;body>
+                &nbsp; &nbsp; &lt;p>Dit is een paragraafje.&lt;/p>
+                &nbsp; &lt;/body>
+                &lt;/html>
+
+            </code>
+        </section>
+        <section id="inhoud">
+            <h2>Document inhoudsverdeling <span class="halfsize">{sectioning content}</h2>
+            <p>Inhoudsverdeling verdeelt of segmenteert <mark>alle</mark> inhoud binnen de body. </p>
+            <h5>&lt;header> . . . &lt;/header></h5>
+            <p>Introductie van de inhoud, navigatie, logo, zoekbalk, auteur,...</p>
+            <h5>&lt;nav> . . . &nbsp;&lt;/nav> </h5>
+            <p>Navigatie a.d.h.v. links die verwijzen binnen en/of buiten de pagina.</p>
+            <h5>&lt;main> . . . &lt;/main></h5>
+            <p>Hoofdinhoud, centraal onderwerp van document of applicatie.</p>
+            <h5>&lt;section> . . . &lt;/section></h5>
+            <p>Onderverdelingen van de onderwerpen binnenin de main. </p>
+            <h5>&lt;footer> . . . &lt;/footer></h5>
+            <p>Voettekst, informatie over auteur, website, gegevens, copyright, links naar gerelateerde documenten.
+            </p>
+        </section>
+        <section id="flow">
+            <h2>Document inhoudsstroom <span class="halfsize">{flow content}</span></h2>
+            <p>De inhoudsstroom omvat de meeste elementen die binnen het body-element kunnen worden geplaatst,
+                inclusief
+                elementen voor inhoudsverdeling, koptitels, tekst, insluiting (embedding), interactie en
+                formulieren. </p>
+            <p>De belangrijkste flow elementen:</p>
+            <code>
+                &lt;a>, &lt;audio>, &lt;b>, &lt;blockquote>, &lt;br>, &lt;button>, &lt;canvas>, &lt;code>, &lt;div>, &lt;em>, &lt;embed>, &lt;footer>, &lt;form>, &lt;h1>, &lt;h2>, &lt;h3>, &lt;h4>, &lt;h5>, &lt;h6>, &lt;header>, &lt;hr>, &lt;i>, &lt;iframe>, &lt;img>, &lt;input>, &lt;label>, &lt;main>, &lt;mark>, &lt;nav>, &lt;ol>, &lt;p>, &lt;picture>, &lt;s>, &lt;script>, &lt;section>, &lt;select>, &lt;span>, &lt;strong>, &lt;sub>, &lt;sup>, &lt;svg>, &lt;textarea>, &lt;time>, &lt;ul>, &lt;video>,...
+
+            </code>
+        </section>
+        <section id="koppen">
+            <h2>Kopinhoud <span class="halfsize">{heading content}</span></h2>
+            <p>Kopinhoud omschrijft de titel of ondertitel van een onderdeel. <mark>Niet</mark> hetzelfde als het
+                header
+                element. </p>
+            <code>
+                &lt;h1> Koptitel &lt;/h1>
+                &lt;h2> Ondertitel &lt;/h2>
+                &lt;h3> . . . &lt;/h3>
+                &lt;h4> . . . &lt;/h4>
+                &lt;h5> . . . &lt;/h5>
+                &lt;h6> . . . &lt;/h6>
+
+            </code>
+        </section>
+        <section id="paragraaf">
+            <h2>Het alinea-element <span class="halfsize">{paragraph element}</h2>
+            <p>Het &lt;p>-element vertegenwoordigt een alinea. Alinea's zijn tekstblokken die van aangrenzende
+                blokken vaak worden gescheiden door lege regels. Alinea's zijn blokken inhoud die gesloten worden met de
+                &lt;/p>-tag. </p>
+
+            <code>
+                &lt;p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ducimus quae placeat, ipsam minus necessitatibus atque. &lt;/p>
+    
+            </code>
+        </section>
+        <section id="lijstjes">
+            <h2>(On)geordende en lijst met Lijstitems <span class="halfsize">{list elements}</h2>
+            <p>Het &lt;li>-element wordt gebruikt om een item in een lijst weer te geven. Het moet in een bovenliggend
+                element staan: een geordende lijst (&lt;ol>), een ongeordende lijst (&lt;ul>) of een menu (&lt;menu>).
+                In menu's en ongeordende lijsten worden lijstitems meestal weergegeven met opsommingstekens. In
+                geordende lijsten worden ze meestal weergegeven met een oplopende teller aan de linkerkant, zoals een
+                cijfer of letter.</p>
+            <code>
+            &lt;ul>
+            &nbsp;&nbsp;&lt;li> ... &lt;/li>
+            &nbsp;&nbsp;&lt;li> ... &lt;/li>
+            &nbsp;&nbsp;&lt;li> ... &lt;/li>
+            &lt;/ul>
+            &lt;ol>
+            &nbsp;&nbsp;&lt;li> ... &lt;/li>
+            &nbsp;&nbsp;&lt;li> ... &lt;/li>
+            &nbsp;&nbsp;&lt;li> ... &lt;/li>
+            &lt;/ol>
+
+            • ... &nbsp; 1. ...
+            • ... &nbsp; 2. ...
+            • ... &nbsp; 3. ...
+
+            </code>
+            
+        </section>
+        <section id="tekst">
+            <h2>Tekstinhoud <span class="halfsize">{phrasing content}</span></h2>
+            <p>Tekstinhoud definieert tekst en de opmaak die deze bevat.</p>
+            <code>
+                &lt;a>, &lt;abbr>, &lt;b>, &lt;br>, &lt;button>, &lt;cite>, &lt;code>, &lt;data>, &lt;datalist>, &lt;em>, &lt;i>, &lt;iframe>, &lt;img>, &lt;input>, &lt;label>, &lt;mark>, &lt;meter>, &lt;output>, &lt;progress>, &lt;s>, &lt;select>, &lt;small>, &lt;span>, &lt;strong>, &lt;sub>, &lt;sup>, &lt;textarea>, &lt;time>, &lt;wbr> 
+
+            </code>
+        </section>
+        <section id="anchor">
+            <h2>Het ankerelement <span class="halfsize">{anchor element}</span></h2>
+            <p>Het &lt;a>-element (of ankerelement), met het href-attribuut, creëert een hyperlink naar
+                andere webpagina's, bestanden, e-mailadressen, en/of locaties op dezelfde pagina,...</p>
+
+            <code>
+                &lt;a href="#interne-link">Deze link verwijst binnen de website&lt;/a>
+                &lt;a href="www.externe-link.be">Deze link verwijst buiten de website&lt;/a>
+
+            </code>
+        </section>
+        <section id="embed">
+            <h2>Ingesloten inhoud <span class="halfsize">{embedded content}</span></h2>
+            <p>Ingesloten elementen importeren inhoud uit een andere bron of document.</p>
+            <code>
+                &lt;audio>, &lt;canvas>, &lt;embed>, &lt;iframe>, &lt;img>, &lt;math>, &lt;object>, &lt;picture>, &lt;svg>, &lt;video>
+
+            </code>
+        </section>
+        <section id="interactief">
+            <h2>Interactieve inhoud <span class="halfsize">{interactive content}</span></h2>
+            <p>Interactieve elementen zijn specifiek ontworpen voor gebruikersinteractie. </p>
+            <code>
+                &lt;a>, &lt;button>, &lt;details>, &lt;embed>, &lt;iframe>, &lt;label>, &lt;select>
+
+            </code>
+        </section>
+        <section id="form">
+            <h2>Formulier-gerelateerde inhoud <span class="halfsize">{form-associated content}</span></h2>
+            <p>Elementen binnenin een formulier met interactieve besturingselementen voor het indienen van
+                informatie, omsloten in het &lt;form> element. </p>
+            <code>
+                &lt;button>, &lt;fieldset>, &lt;input>, &lt;label>, &lt;meter>, &lt;object>, &lt;output>, &lt;progress>, &lt;select>, &lt;textarea>
+
+            </code>
+        </section>
+        <section id="attributen">
+            <h2>Attributen (of kenmerken) <span class="halfsize">{HTML attributes}</span></h2>
+            <p>Elementen in HTML hebben attributen; dit zijn aanvullende waarden die de elementen configureren of hun gedrag op verschillende manieren aanpassen om te voldoen aan de criteria die de gebruikers willen.</p>
+            <h5>id="..."</h5>
+            <p>Het attribuut id definieert een identifier (ID) die uniek moet zijn in het hele document. Het doel is om het element te identificeren bij het koppelen, scripting of styling (met CSS).</p>
+            <h5>src="..."</h5>
+            <p>De URL van de insluitbare inhoud.</p>
+            <h5>alt="..."</h5>
+            <p>Alternatieve tekst voor het geval een afbeelding niet kan worden weergegeven.</p>
+            <h5>href="..."</h5>
+            <p>De URL van een gekoppelde bron.</p>
+            <h5>width="..."</h5>
+            <p>Dit bepaalt de breedte van het element in pixels.</p>
+        </section>
     </article>
     <script src="../../static/js/jquery-3.6.1.min.js"></script>
     <!-- <script src="../../static/js/webslides.js"></script>

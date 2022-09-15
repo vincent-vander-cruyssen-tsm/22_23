@@ -59,7 +59,7 @@ hr {
 }
 
 h1 {
-    font-size: 5rem;
+    font-size: 4.5rem;
     font-weight: 400;
     padding: 0 2vw;
     margin-bottom: 0.25em;
@@ -293,7 +293,7 @@ code {
     white-space: pre-line;
     border-radius: 0.5ch;
     max-width: 100ch;
-    padding: 0 5%;
+    padding: 0 3%;
     margin: 0 auto;
     margin-bottom: 2.5em;
 }
@@ -309,13 +309,8 @@ header {
 header nav {
     position: absolute;
     top: 0;
-    right: -8ch;
-    width: 12ch;
-    transition: all 100ms ease;
-}
-
-header nav:hover {
-    transform: translateX(-8ch);
+    left: 0;
+    width: 15ch;
 }
 
 header nav ol {
@@ -330,7 +325,7 @@ header nav ol li {
 
 header nav ol a {
     background-color: var(--hcolor1);
-    padding: 0.5em 4ch;
+    padding: 0.4em 4ch;
 }
 
 header nav ol a:hover {
