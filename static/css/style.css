@@ -11,7 +11,7 @@
 }
 
 :root {
-    --bgcolor1: hsl(81, 95%, 94%);
+    --bgcolor1: hsl(60, 85%, 95%);
     --fcolor1: hsl(0, 11%, 8%);
     --hcolor1: hsla(180, 9%, 54%, 0.25);
     --hcolor2: hsla(180, 9%, 84%, 0.25);
@@ -154,7 +154,7 @@ li {
     max-width: 40vw;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     align-items: center;
     gap: 2em;
@@ -205,9 +205,9 @@ img:hover, p:hover, h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, li:hover, 
 }
 
 a {
-    text-decoration: underline;
+    /* text-decoration: underline;
     text-decoration-thickness: 10%;
-    text-underline-offset: 5%;
+    text-underline-offset: 5%; */
     color: var(--ucolor1) !important;
     cursor: pointer;
 }
@@ -241,6 +241,7 @@ a:hover {
 }
 
 #navigation {
+    padding: 0;
     bottom: 1em;
     width: 20vw;
 }
