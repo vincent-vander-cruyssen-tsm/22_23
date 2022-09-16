@@ -53,6 +53,10 @@ section#home {
     min-height: 100vh;
 }
 
+section:first-child {
+    padding-top: 2em;
+}
+
 hr {
     background: radial-gradient(var(--hcolor1), hsla(0, 0%, 100%, 0) 75%);
     height: 0.1em;
@@ -347,9 +351,22 @@ button#themetoggle {
 }
 
 input {
+    font-size: 1rem;
+    height: auto;
+    padding-left: 0.5em !important;
     box-shadow: none;
 }
 
 input:hover {
     box-shadow: none;
+}
+
+.formgrid {
+    padding: 0 20%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.formgrid * {
+    padding: 0;
 }
