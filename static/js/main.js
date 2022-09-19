@@ -15,3 +15,4 @@ function calcAndShowTotal() {
 }
 
 $('.formgrid :checkbox').change(calcAndShowTotal).change();
+// $('#total').after(querySelectorAll('.formgrid :checkbox'));
