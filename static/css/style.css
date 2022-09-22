@@ -14,9 +14,11 @@
     --bgcolor1: hsl(60, 85%, 95%);
     --fcolor1: hsl(0, 11%, 8%);
     --hcolor1: hsla(180, 9%, 54%, 0.25);
-    --hcolor2: hsla(180, 9%, 84%, 0.25);
-    --ucolor1: hsl(200, 85%, 40%);
-    --ucolor2: hsl(50, 85%, 50%);
+    --hcolor2: hsla(180, 9%, 74%, 0.25);
+    --ucolor1: hsl(200, 60%, 35%);
+    --ucolor2: hsl(8, 95%, 35%);
+    --ncolor1: hsla(180, 5%, 75%, 0.25);
+    --ncolor2: hsla(180, 5%, 95%, 0.25);
 }
 
 html,
@@ -60,6 +62,7 @@ section:first-child {
 hr {
     background: radial-gradient(var(--hcolor1), hsla(0, 0%, 100%, 0) 75%);
     height: 0.1em;
+    margin: 1em auto 3em auto;
 }
 
 h1 {
@@ -77,13 +80,16 @@ h2 {
 
 h2::before {
     content: '#';
-    font-size: 2rem;
+    font-size: 75%;
+    font-weight: 400;
+    position: absolute;
+    transform: translateX(-115%) translateY(22%);
     opacity: 0.2;
 }
 
 .halfsize {
-    font-size: calc(100% * 1 / 3);
-    opacity: 0.5;
+    font-size: 40%;
+    opacity: 0.33;
 }
 
 h3 {
@@ -112,8 +118,8 @@ h3 {
     padding: 0 10%;
 }
 
-h4, h5, p, form {
-    padding: 0 25%;
+h4, h5, p, form, .noslides h1, .noslides h2, .noslides h3, .noslides .slide-grid {
+    padding: 0 24%;
 }
 
 p:last-child {
@@ -125,8 +131,9 @@ form {
 }
 
 table {
-    padding: 0 15%;
+    padding: 0 25%;
     margin: 0;
+    margin-bottom: 2em;
     border-collapse: separate;
 }
 
@@ -156,7 +163,7 @@ ol {
 }
 
 li {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     margin: 0 !important;
     padding: 0;
     margin-bottom: 1em !important;
@@ -229,13 +236,12 @@ a:hover {
 }
 
 .slide-grid {
-    max-width: 80vw;
-    margin: 1em auto;
     display: grid;
     grid-template-columns: 1fr 0.5fr;
     justify-items: center;
     align-items: center;
     gap: 2em;
+    padding: 0 20%;
 }
 
 .table-ten {
@@ -300,7 +306,7 @@ code {
     text-align: left;
     white-space: pre-line;
     border-radius: 0.5ch;
-    max-width: 100ch;
+    max-width: 90ch;
     padding: 0 3%;
     margin: 0 auto;
     margin-bottom: 2.5em;
@@ -308,36 +314,54 @@ code {
 
 header {
     font-family: 'IBM Plex Mono', monospace;
+    width: 15ch;
     position: fixed;
-    width: 100%;
-    z-index: 1;
+    padding: 0;
+    top: 0;
+    left: 0;
     user-select: none;
 }
 
 header nav {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 15ch;
+    width: 100%;
 }
 
-header nav ol {
+header nav ul.dropnav {
     display: flex;
-    flex-flow: column;
+    flex-direction: column;
 }
 
-header nav ol li {
+header nav ul li {
+    background-color: var(--ncolor1);
     font-size: 0.7rem;
     margin: 0 !important;
 }
 
-header nav ol a {
-    background-color: var(--hcolor1);
-    padding: 0.4em 4ch;
+header nav ul li .dropsub li {
+    font-size: 0.6rem;
 }
 
-header nav ol a:hover {
-    background-color: var(--hcolor2);
+header nav ul li .dropsub li:hover {
+    background-color: var(--ncolor2);
+}
+
+header nav ul li a {
+    display: block;
+    padding: 0.4em 2ch;
+}
+
+header nav ul.dropsub {
+    display: none;
+}
+
+header nav ul.dropsub li {
+    width: 100%;
+    text-align: right;
+}
+
+header nav .droplevel:hover .dropsub {
+    display: block;
+    width: 100%;
 }
 
 button#themetoggle {
@@ -373,4 +397,28 @@ input:hover {
 
 .formgrid * {
     padding: 0;
+}
+
+iframe {
+    background-color: white;
+    min-width: 55vw;
+    min-height: 85vh;
+    margin: 0 auto;
+}
+
+.noslides h1 {
+    text-align: left;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.noslides h2 {
+    text-align: left;
+    font-size: 1.75rem;
+    font-weight: 500;
+}
+
+.noslides h3 {
+    text-align: left;
+    font-size: 1.5rem;
 }
