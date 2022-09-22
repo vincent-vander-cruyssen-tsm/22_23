@@ -52,29 +52,43 @@
         </section>
         <section id="formulier">
             <h2>Klaslokaal formulier</h2>
-            <form action="">
+            <form>
                 <fieldset>
                     <legend>De muren van het lokaal zijn:</legend>
                     <label><input type="radio" name="muren" value="blauw" checked>Blauw</label>
-                    <label><input type="radio" name="muren" value="rood"> Rood</label>
-                </fieldset>
+                    <label><input type="radio" name="muren" value="rood">Rood</label>
+                    <label><input type="radio" name="muren" value="groen">Groen</label>
+                </fieldset><br>
                 <fieldset>
                     <legend>Wat is er in het lokaal aanwezig?</legend>
                     <label><input type="checkbox" name="aanwezig" value="stoelen" checked>Stoelen</label>
                     <label><input type="checkbox" name="aanwezig" value="banken">Banken</label>
-                    <label><input type="checkbox" name="aanwezig" value="projectie">Projectie</label>
-                </fieldset>
+                    <label><input type="checkbox" name="aanwezig" value="projector">Projector</label>
+                </fieldset><br>
                 <fieldset>
                     <legend>Vrije toevoeging:</legend>
                     <textarea name="toevoeging" cols="30" rows="10"
                         placeholder="Hier schrijf ik wat extra benodigdheden"></textarea>
-                </fieldset>
+                </fieldset><br>
                 <fieldset>
-                    <legend>Mijn ideale klas:</legend>
-                    <input type="text" name="afbeelding" placeholder="URL naar afbeelding" required>
-                </fieldset>
-                <hr>
-                <button type="submit">Submit</button>
+                    <legend>Mijn leeftijd:</legend>
+                    <input type="number" name="age" min="1" max="99" placeholder="1">
+                </fieldset><br>
+                <fieldset>
+                    <legend>Foto van mijn ideale klas:</legend>
+                    <input type="file" name="afbeelding" required>
+                </fieldset><br>
+                <fieldset>
+                    <legend>Hoe heeft u van ons gehoord?</legend>
+                    <select name="enquete">
+                        <option value="-">--Selecteer een optie--</option>
+                        <option value="a">Vrienden/familie</option>
+                        <option value="b">Zoekmachine</option>
+                        <option value="c">Advertentie</option>
+                        <option value="d">Andere</option>
+                    </select>
+                </fieldset><br>
+                <button type="submit">Submit</button> <button type="reset">Reset</button>
             </form>
         </section>
     </main>
