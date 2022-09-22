@@ -422,3 +422,7 @@ iframe {
     text-align: left;
     font-size: 1.5rem;
 }
+
+.mgmid {
+    margin: 0 auto;
+}
