@@ -390,7 +390,7 @@ input:hover {
 }
 
 .formgrid {
-    padding: 0 20%;
+    padding: 0 24%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
