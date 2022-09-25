@@ -15,10 +15,10 @@
     --fcolor1: hsl(0, 11%, 8%);
     --hcolor1: hsla(180, 9%, 54%, 0.25);
     --hcolor2: hsla(180, 9%, 74%, 0.25);
-    --ucolor1: hsl(200, 60%, 55%);
-    --ucolor2: hsl(8, 95%, 35%);
-    --ncolor1: hsla(180, 5%, 75%, 0.25);
-    --ncolor2: hsla(180, 5%, 95%, 0.25);
+    --ucolor1: hsl(200, 85%, 55%);
+    --ucolor2: hsl(10, 65%, 55%);
+    --ncolor1: hsla(180, 5%, 75%, 0.15);
+    --ncolor2: hsla(180, 5%, 95%, 0.15);
 }
 
 html,
@@ -118,7 +118,7 @@ h3 {
     padding: 0 10%;
 }
 
-h4, h5, p, form, .noslides h1, .noslides h2, .noslides h3, .noslides .slide-grid {
+h4, h5, p, form, ol, .noslides h1, .noslides h2, .noslides h3, .noslides .slide-grid, .noslides ul {
     padding: 0 24%;
 }
 
@@ -142,6 +142,7 @@ td {
 }
 
 ul {
+    text-align: left;
     list-style-type: none;
     padding: 0;
 }
@@ -159,11 +160,11 @@ ul {
 }
 
 ol {
+    text-align: left;
     list-style-type: decimal-leading-zero;
 }
 
 li {
-    font-size: 1.1rem;
     margin: 0 !important;
     padding: 0;
     margin-bottom: 1em !important;
@@ -407,22 +408,31 @@ iframe {
 }
 
 .noslides h1 {
-    text-align: left;
     font-size: 2rem;
     font-weight: 500;
+    text-align: left;
 }
 
 .noslides h2 {
-    text-align: left;
     font-size: 1.75rem;
     font-weight: 500;
+    text-align: left;
 }
 
 .noslides h3 {
-    text-align: left;
     font-size: 1.5rem;
+    text-align: left;
+}
+
+.noslides h4 {
+    font-size: 1.25rem;
+    text-align: left;
 }
 
 .mgmid {
     margin: 0 auto;
+}
+
+.noslides ul li {
+    list-style-type: disc;
 }
