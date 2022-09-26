@@ -35,10 +35,10 @@
                         <li><a href="#lijstjes">Lijstjes</a></li>
                         <li><a href="#tekst">Tekstinhoud</a></li>
                         <li><a href="#anchor">Ankerelement</a></li>
-                        <li><a href="#embed">Embed</a></li>
-                        <li><a href="#interactief">Interactief</a></li>
                         <li><a href="#form">Formulier</a></li>
                         <li><a href="#attributen">Attributen</a></li>
+                        <li><a href="#embed">Embed</a></li>
+                        <li><a href="#interactief">Interactief</a></li>
                     </ul>
                 </li>
             </ul>
@@ -48,7 +48,8 @@
         <hr>
         <section id="home">
             <h1>Multimedia <u>Script</u> Webdesign</h1>
-            <h2>HTML in het kort...</h2>
+            <h2>HTML</h2>
+            <h5>In het kort...</h5>
             <p>HTML (HyperText Markup Language) is de meest elementaire bouwsteen van het web. Het definieert de
                 betekenis en structuur van webcontent (inhoud). Naast HTML worden over het algemeen andere technologieën
                 gebruikt om het uiterlijk (CSS) of de functionaliteit/het gedrag (JavaScript) van een
@@ -63,8 +64,7 @@
                 &lt;footer>, &lt;section>, &lt;p>, &lt;div>, &lt;span>, &lt; img>, &lt;nav>, &lt;video>,
                 &lt;ul>, &lt;ol> , &lt;li> en vele anderen.</p>
             <p>Een HTML-element wordt van andere tekst in een document gescheiden door "tags", die bestaan uit de
-                elementnaam omringd door "<" en ">" . De conventie, en de gewoonte, is om tags in kleine letters te
-                    schrijven.</p>
+                elementnaam omringd door "<" en ">" . De conventie, en de gewoonte, is om tags in kleine letters te schrijven.</p>
                     <p>Hieronder vind je een volledige uiteenzetting van HTML. </p>
         </section>
         <section id="basis">
@@ -94,30 +94,10 @@
             <img src="img/html_element_ontledng.png" alt="png" class="smaller mgb">
             <h5>De belangrijkste onderdelen van een element zijn als volgt:</h5>
             <ol>
-                <li>
-                    <p>01. De openingstag: deze bestaat uit de naam van het element (in dit geval p), verpakt tussen
-                        openings- en
-                        sluitpunthaakjes. Dit geeft aan waar het element begint of begint te werken - in dit geval waar
-                        de
-                        alinea
-                        begint.</p>
-                </li>
-                <li>
-                    <p>02. De afsluitende tag: Dit is hetzelfde als de openingstag, behalve dat deze een schuine streep
-                        voor de
-                        elementnaam bevat. Dit geeft aan waar het element eindigt - in dit geval waar de alinea eindigt.
-                        Het
-                        niet
-                        toevoegen van een afsluitende tag is een van de standaard beginnersfouten en kan tot vreemde
-                        resultaten
-                        leiden.</p>
-                </li>
-                <li>
-                    <p>03. De inhoud: Dit is de inhoud van het element, in dit geval gewoon tekst.</p>
-                </li>
-                <li>
-                    <p>04. Het element: De openingstag, de sluitingstag en de inhoud vormen samen het element.</p>
-                </li>
+                <li>De openingstag: deze bestaat uit de naam van het element (in dit geval p), verpakt tussen openings- ensluitpunthaakjes. Dit geeft aan waar het element begint of begint te werken - in dit geval waar de alinea begint. </li>
+                <li>De afsluitende tag: Dit is hetzelfde als de openingstag, behalve dat deze een schuine streep voor de elementnaam bevat. Dit geeft aan waar het element eindigt - in dit geval waar de alinea eindigt. Het niet toevoegen van een afsluitende tag is een van de standaard beginnersfouten en kan tot vreemde resultaten leiden. </li>
+                <li>De inhoud: Dit is de inhoud van het element, in dit geval gewoon tekst. </li>
+                <li>Het element: De openingstag, de sluitingstag en de inhoud vormen samen het element. </li>
             </ol>
             <p>Elementen kunnen ook attributen hebben die er als volgt uitzien:</p>
             <img src="img/html_element_attributen.png" alt="png" class="smaller mgb">
@@ -167,43 +147,13 @@
             </code>
             <h5>Hier hebben we het volgende:</h5>
             <ul>
-                <li>
-                    <p>&lt;!DOCTYPE html> → doctype. Het is een verplichte inleiding. doctype zorgt ervoor dat de
-                        browser zijn best doet om de relevante specificaties te volgen.</p>
-                </li>
-                <li>
-                    <p>&lt;html>&lt;/html> → het &lt;html>-element. Dit element omhult alle inhoud op de hele pagina en
-                        wordt soms het root-element genoemd. Het bevat ook het lang-attribuut, waarmee de taal
-                        van de inhoud wordt ingesteld.</p>
-                </li>
-                <li>
-                    <p>&lt;head>&lt;/head> → het &lt;head>-element. Dit element fungeert als een container voor alle
-                        dingen die u op de HTML-pagina wilt opnemen die niet de inhoud zijn die u aan de kijkers van uw
-                        pagina laat zien. Dit omvat zaken als trefwoorden en een paginabeschrijving die u in
-                        zoekresultaten wilt weergeven, CSS om inhoud op te maken en meer.</p>
-                </li>
-                <li>
-                    <p>&lt;meta charset="UTF-8"> → Dit element stelt de tekenset die uw document moet gebruiken in op
-                        UTF-8, deze set bevat de meeste tekens uit de overgrote meerderheid van de geschreven talen. In
-                        wezen
-                        kan het nu alle tekstuele inhoud aan die u erop kunt plaatsen. </p>
-                </li>
-                <li>
-                    <p>&lt;meta name="viewport" content="width=device-width"> → Dit viewport-element zorgt ervoor dat de
-                        pagina wordt weergegeven op de breedte van de viewport, waardoor wordt voorkomen dat mobiele
-                        browsers pagina's verkleinen naar de viewport.</p>
-                </li>
-                <li>
-                    <p>&lt;title>&lt;/title> → het &lt;title>-element. Hiermee wordt de titel van uw pagina ingesteld.
-                        Dit is de titel die wordt weergegeven in het browsertabblad waarin de pagina is geladen. Het
-                        wordt ook gebruikt om de pagina te beschrijven wanneer u een bookmark maakt of er een favoriet
-                        van maakt.</p>
-                </li>
-                <li>
-                    <p>&lt;body>&lt;/body> → het &lt;body>-element. Dit bevat alle inhoud die u aan internetgebruikers
-                        wilt laten zien wanneer ze uw pagina bezoeken, of dat nu tekst, afbeeldingen, video's, games,
-                        afspeelbare audiotracks of wat dan ook is.</p>
-                </li>
+                <li>&lt;!DOCTYPE html> = doctype. Het is een verplichte inleiding. doctype zorgt ervoor dat de browser zijn best doet om de relevante specificaties te volgen. </li>
+                <li>&lt;html>...&lt;/html> = het &lt;html>-element. Dit element omhult alle inhoud op de hele pagina en wordt soms het root-element genoemd. Het bevat ook het lang-attribuut, waarmee de taal van de inhoud wordt ingesteld. </li>
+                <li>&lt;head>...&lt;/head> = het &lt;head>-element. Dit element fungeert als een container voor alle dingen die u op de HTML-pagina wilt opnemen die niet de inhoud zijn die u aan de kijkers van uw pagina laat zien. Dit omvat zaken als trefwoorden en een paginabeschrijving die u in zoekresultaten wilt weergeven, CSS om inhoud op te maken en meer. </li>
+                <li>&lt;meta charset="UTF-8"> = Dit element stelt de tekenset die uw document moet gebruiken in op UTF-8, deze set bevat de meeste tekens uit de overgrote meerderheid van de geschreven talen. In wezen kan het nu alle tekstuele inhoud aan die u erop kunt plaatsen. </li>
+                <li>&lt;meta name="viewport" content="width=device-width"> = Dit viewport-element zorgt ervoor dat de pagina wordt weergegeven op de breedte van de viewport, waardoor wordt voorkomen dat mobiele browsers pagina's verkleinen naar de viewport. </li>
+                <li>&lt;title>...&lt;/title> = het &lt;title>-element. Hiermee wordt de titel van uw pagina ingesteld. Dit is de titel die wordt weergegeven in het browsertabblad waarin de pagina is geladen. Het wordt ook gebruikt om de pagina te beschrijven wanneer u een bookmark maakt of er een favoriet van maakt. </li>
+                <li>&lt;body>...&lt;/body> = het &lt;body>-element. Dit bevat alle inhoud die u aan internetgebruikers wilt laten zien wanneer ze uw pagina bezoeken, of dat nu tekst, afbeeldingen, video's, games, afspeelbare audiotracks of wat dan ook is. </li>
             </ul>
         </section>
         <section id="cheat">
@@ -233,17 +183,13 @@
             <p>Het head-element bevat informatie (metadata) over het
                 document, zoals de titel, scripts en stylesheets.</p>
             <h5>&lt;link></h5>
-            <p>Het link-element, of External Resource Link, specificeert relaties tussen het huidige
-                document en een externe bron. Dit element wordt meestal gebruikt om te linken naar stylesheets,
-                maar wordt ook gebruikt om sitepictogrammen vast te stellen.</p>
+            <p>Het link-element, of External Resource Link, specificeert relaties tussen het huidige document en een externe bron. Dit element wordt meestal gebruikt om te linken naar stylesheets, maar wordt ook gebruikt om sitepictogrammen vast te stellen.</p>
             <h5>&lt;meta></h5>
-            <p>Het meta-element vertegenwoordigt metadata die niet kan worden weergegeven door andere meta-gerelateerde
-                elementen. </p>
+            <p>Het meta-element vertegenwoordigt metadata die niet kan worden weergegeven door andere meta-gerelateerde elementen. </p>
             <h5>&lt;style> . . . &lt;/style></h5>
             <p>Het style-element bevat stijlinformatie voor een document of een deel van een document.</p>
             <h5>&lt;title> . . . &lt;/title></h5>
-            <p>Het titelelement definieert de titel van het document die wordt weergegeven in de titelbalk van een
-                browser of op het tabblad van een pagina.</p>
+            <p>Het titelelement definieert de titel van het document die wordt weergegeven in de titelbalk van een browser of op het tabblad van een pagina.</p>
             <code>
                     &lt;head>
                     &nbsp;&lt;meta charset="UTF-8">
@@ -259,9 +205,7 @@
         <section id="body">
             <h2>Document body-element</h2>
             <h5>&lt;body> . . . &lt;/body></h5>
-            <p>Het body-element vertegenwoordigt de inhoud van een HTML-document. Er kan maar één body-element
-                aanwezig
-                zijn in een document. (Er wordt er maar één weergegeven.)</p>
+            <p>Het body-element vertegenwoordigt de inhoud van een HTML-document. Er kan maar één body-element aanwezig zijn in een document. (Er wordt er maar één weergegeven.)</p>
             <code>
                 &lt;html>
                 &nbsp; &lt;head>
@@ -317,9 +261,7 @@
         </section>
         <section id="paragraaf">
             <h2>Het alinea-element <span class="halfsize">{paragraph element}</h2>
-            <p>Het &lt;p>-element vertegenwoordigt een alinea. Alinea's zijn tekstblokken die van aangrenzende
-                blokken vaak worden gescheiden door lege regels. Alinea's zijn blokken inhoud die gesloten worden met de
-                &lt;/p>-tag. </p>
+            <p>Het &lt;p>-element vertegenwoordigt een alinea. Alinea's zijn tekstblokken die van aangrenzende blokken vaak worden gescheiden door lege regels. Alinea's zijn blokken inhoud die gesloten worden met de &lt;/p>-tag. </p>
 
             <code>
                 &lt;p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ducimus quae placeat, ipsam minus necessitatibus atque. &lt;/p>
@@ -328,11 +270,7 @@
         </section>
         <section id="lijstjes">
             <h2>(On)Geordende lijst met Lijstitems <span class="halfsize">{list elements}</h2>
-            <p>Het &lt;li>-element wordt gebruikt om een item in een lijst weer te geven. Het moet in een bovenliggend
-                element staan: een geordende lijst (&lt;ol>), een ongeordende lijst (&lt;ul>) of een menu (&lt;menu>).
-                In menu's en ongeordende lijsten worden lijstitems meestal weergegeven met opsommingstekens. In
-                geordende lijsten worden ze meestal weergegeven met een oplopende teller aan de linkerkant, zoals een
-                cijfer of letter.</p>
+            <p>Het &lt;li>-element wordt gebruikt om een item in een lijst weer te geven. Het moet in een bovenliggend element staan: een geordende lijst (&lt;ol>), een ongeordende lijst (&lt;ul>) of een menu (&lt;menu>). In menu's en ongeordende lijsten worden lijstitems meestal weergegeven met opsommingstekens. In geordende lijsten worden ze meestal weergegeven met een oplopende teller aan de linkerkant, zoals een cijfer of letter.</p>
             <code>
             &lt;ul>
             &nbsp;&nbsp;&lt;li> ... &lt;/li>
@@ -356,14 +294,13 @@
             <h2>Tekstinhoud <span class="halfsize">{phrasing content}</span></h2>
             <p>Tekstinhoud definieert tekst en de opmaak die deze bevat.</p>
             <code>
-                &lt;a>, &lt;abbr>, &lt;b>, &lt;br>, &lt;button>, &lt;cite>, &lt;code>, &lt;data>, &lt;datalist>, &lt;em>, &lt;i>, &lt;iframe>, &lt;img>, &lt;input>, &lt;label>, &lt;mark>, &lt;meter>, &lt;output>, &lt;progress>, &lt;s>, &lt;select>, &lt;small>, &lt;span>, &lt;strong>, &lt;sub>, &lt;sup>, &lt;textarea>, &lt;time>, &lt;wbr> 
+                &lt;a>, &lt;abbr>, &lt;b>, &lt;br>, &lt;button>, &lt;cite>, &lt;code>, &lt;data>, &lt;datalist>, &lt;em>, &lt;i>, &lt;iframe>, &lt;img>, &lt;input>, &lt;label>, &lt;mark>, &lt;output>, &lt;s>, &lt;select>, &lt;small>, &lt;span>, &lt;strong>, &lt;sub>, &lt;sup>, &lt;textarea>, &lt;time>, &lt;wbr> 
 
             </code>
         </section>
         <section id="anchor">
             <h2>Het ankerelement <span class="halfsize">{anchor element}</span></h2>
-            <p>Het &lt;a>-element (of ankerelement), met het href-attribuut, creëert een hyperlink naar
-                andere webpagina's, bestanden, e-mailadressen, en/of locaties op dezelfde pagina,...</p>
+            <p>Het &lt;a>-element (of ankerelement), met het href-attribuut, creëert een hyperlink naar andere webpagina's, bestanden, e-mailadressen, en/of locaties op dezelfde pagina,...</p>
 
             <code>
                 &lt;a href="#interne-link">Deze link verwijst binnen de website&lt;/a>
@@ -371,11 +308,48 @@
 
             </code>
         </section>
+        <section id="attributen">
+            <h2>Attributen (of kenmerken) <span class="halfsize">{HTML attributes}</span></h2>
+            <p>Elementen in HTML hebben attributen; dit zijn aanvullende waarden die de elementen configureren of hun gedrag op verschillende manieren aanpassen om te voldoen aan de criteria die de gebruikers willen.</p>
+            <ul>
+                <li><mark>id="..."</mark> Het attribuut id definieert een identifier (ID) die uniek moet zijn in het hele document. Het doel is om het element te identificeren bij het koppelen, scripting of styling (met CSS).</li>
+                <li><mark>src="..."</mark> de URL van de insluitbare inhoud.</li>
+                <li><mark>alt="..."</mark> alternatieve tekst voor het geval een afbeelding niet kan worden weergegeven.</li>
+                <li><mark>href="..."</mark> de URL van een gekoppelde bron.</li>
+                <li><mark>width="..."</mark> dit bepaalt de breedte van het &lt;img> element in pixels.</li>
+                <li><mark>height="..."</mark> dit bepaalt de hoogte van het &lt;img> element in pixels.</li>
+            </ul>
+        </section>
+        <section id="form">
+            <h2>Formulier-gerelateerde inhoud <span class="halfsize">{form-associated content}</span></h2>
+            <p>Elementen binnenin een formulier met interactieve besturingselementen voor het indienen van informatie, omsloten in het &lt;form> element. </p>
+            <h5>&lt;input></h5>
+            <p>Het &lt;input> HTML-element wordt gebruikt om interactieve elementen voor webgebaseerde formulieren te creëren om gegevens van de gebruiker te ontvangen. Het kan gebruikers toelaten tekst, wachtwoorden, e-mails, datums, en zomeer te selecteren of te bewerken. Het &lt;input>-element is een van de krachtigste en meest complexe in HTML vanwege het enorme aantal combinaties van invoertypen of attributen.</p>
+            <p>De belangrijkste &lt;input> types in HTML zijn:</p>
+            <ul>
+                <li><mark>type="text"</mark> een enkele lijn van tekst</li>
+                <li><mark>type="number"</mark> een numerieke input voor getallen</li>
+                <li><mark>type="password"</mark> een enkele lijn van tekst of symbolen die niet worden weergegeven</li>
+                <li><mark>type="checkbox"</mark> een selectievakje waarmee de gebruiker één optie kan selecteren of deselecteren</li>
+                <li><mark>type="radio"</mark> een selectievakje waarmee de gebruiker één optie kan selecteren uit een lijst met opties</li>
+                <li><mark>type="image"</mark> een afbeelding die als knop kan worden gebruikt</li>
+            </ul>
+            <h5>&lt;fieldset></h5>
+            <p>&lt;fieldset> is een element in HTML dat een groep van elementen omsluit. Het is handig om een groep van elementen samen te groeperen, bijvoorbeeld als je een formulier hebt met verschillende velden.</p>
+            <h5>&lt;legend></h5>
+            <p>Het &lt;legend> element wordt gebruikt om een titel voor een veld te maken. De legend wordt weergegeven in de browser als een caption voor het veld.</p>
+            <h5>&lt;textarea></h5>
+            <p>&lt;textarea> is een element dat een veld toont waarin de gebruiker tekst kan invoeren of wijzigen. Het wordt gebruikt wanneer een formulier veel tekst moet kunnen opnemen, bijvoorbeeld een opmerking of een beschrijving.</p>
+            <h5>&lt;select> & &lt;option></h5>
+            <p>&lt;select> is een element die een dropdown-menu maakt en waaruit de gebruiker meerdere opties kan selecteren. Via het element &lt;option> worden de mogelijke keuzes aangeduid die de gebruiker in de dropdown-menu kan zien en selecteren en is genest in het &lt;select> element.</p>
+            <h5>&lt;button></h5>
+            <p>Een button element in HTML geeft een klikbare knop weer en heeft onder andere de types submit en reset. Deze knoppen worden gebruikt om een formulier op te sturen of opnieuw in te stellen.</p>
+        </section>
         <section id="embed">
             <h2>Ingesloten inhoud <span class="halfsize">{embedded content}</span></h2>
             <p>Ingesloten elementen importeren inhoud uit een andere bron of document.</p>
             <code>
-                &lt;audio>, &lt;canvas>, &lt;embed>, &lt;iframe>, &lt;img>, &lt;math>, &lt;object>, &lt;picture>, &lt;svg>, &lt;video>
+                &lt;audio>, &lt;canvas>, &lt;embed>, &lt;iframe>, &lt;img>, &lt;math>, &lt;picture>, &lt;svg>, &lt;video>
 
             </code>
         </section>
@@ -386,33 +360,6 @@
                 &lt;a>, &lt;button>, &lt;details>, &lt;embed>, &lt;iframe>, &lt;label>, &lt;select>
 
             </code>
-        </section>
-        <section id="form">
-            <h2>Formulier-gerelateerde inhoud <span class="halfsize">{form-associated content}</span></h2>
-            <p>Elementen binnenin een formulier met interactieve besturingselementen voor het indienen van
-                informatie, omsloten in het &lt;form> element. </p>
-            <code>
-                &lt;button>, &lt;fieldset>, &lt;input>, &lt;label>, &lt;meter>, &lt;object>, &lt;output>, &lt;progress>, &lt;select>, &lt;textarea>
-
-            </code>
-            <h5>&lt;input></h5>
-            <p>Het &lt;input> HTML-element wordt gebruikt om interactieve besturingselementen voor webgebaseerde formulieren te creëren om gegevens van de gebruiker te ontvangen; er is een grote verscheidenheid aan typen invoergegevens beschikbaar. Het &lt;input>-element is een van de krachtigste en meest complexe in HTML vanwege het enorme aantal combinaties van invoertypen en attributen.</p>
-        </section>        
-        <section id="attributen">
-            <h2>Attributen (of kenmerken) <span class="halfsize">{HTML attributes}</span></h2>
-            <p>Elementen in HTML hebben attributen; dit zijn aanvullende waarden die de elementen configureren of hun
-                gedrag op verschillende manieren aanpassen om te voldoen aan de criteria die de gebruikers willen.</p>
-            <h5>id="..."</h5>
-            <p>Het attribuut id definieert een identifier (ID) die uniek moet zijn in het hele document. Het doel is om
-                het element te identificeren bij het koppelen, scripting of styling (met CSS).</p>
-            <h5>src="..."</h5>
-            <p>De URL van de insluitbare inhoud.</p>
-            <h5>alt="..."</h5>
-            <p>Alternatieve tekst voor het geval een afbeelding niet kan worden weergegeven.</p>
-            <h5>href="..."</h5>
-            <p>De URL van een gekoppelde bron.</p>
-            <h5>width="..."</h5>
-            <p>Dit bepaalt de breedte van het element in pixels.</p>
         </section>
     </article>
     <script src="../../static/js/jquery-3.6.1.min.js"></script>

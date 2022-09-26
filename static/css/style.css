@@ -145,6 +145,7 @@ ul {
     text-align: left;
     list-style-type: none;
     padding: 0;
+    margin-bottom: 1em;
 }
 
 .alignleft {
@@ -434,5 +435,5 @@ iframe {
 }
 
 .noslides ul li {
-    list-style-type: disc;
+    list-style-type: '↪ ';
 }

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=	, initial-scale=1.0">
+    <title>Script CSS Cursus</title>
+    <link rel="stylesheet" href="../../static/css/webslides.css">
+    <link rel="stylesheet" href="../../static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="dropnav">
+                <li class="droplevel"><a href="#home">CSS</a>
+                    <ul class="dropsub">
+                        <li><a href="#basis">Wat is CSS?</a></li>
+                    </ul>
+                </li>
+                <!-- <li class="droplevel"><a href="#cheat">Spiekbriefje</a>
+                    <ul class="dropsub">
+                        <li><a href="#html">HTML element</a></li>
+                        <li><a href="#meta">Metadata</a></li>
+                        <li><a href="#body">Body</a></li>
+                        <li><a href="#inhoud">Inhoudsverdeling</a></li>
+                        <li><a href="#flow">Stroom</a></li>
+                        <li><a href="#koppen">Koptitels</a></li>
+                        <li><a href="#paragraaf">Paragraaf</a></li>
+                        <li><a href="#lijstjes">Lijstjes</a></li>
+                        <li><a href="#tekst">Tekstinhoud</a></li>
+                        <li><a href="#anchor">Ankerelement</a></li>
+                        <li><a href="#embed">Embed</a></li>
+                        <li><a href="#interactief">Interactief</a></li>
+                        <li><a href="#form">Formulier</a></li>
+                        <li><a href="#attributen">Attributen</a></li>
+                    </ul>
+                </li> -->
+            </ul>
+        </nav>
+    </header>
+    <article id="webslides" class="noslides">
+        <hr>
+        <section id="home">
+            <h1>Multimedia <u>Script</u> Webdesign</h1>
+            <h2>CSS</h2>
+            <h5>In het kort...</h5>
+            <p>CSS staat voor Cascading Style Sheets. Het is een taal die wordt gebruikt om het uiterlijk, of lay-out, van een webpagina te beschrijven. CSS wordt gebruikt om alle HTML-elementen op een pagina op te maken, inclusief de koppen, alinea's en andere stukken tekst. Je kunt met CSS onder andere elementen op de pagina positioneren, kleuren toewijzen en de achtergrondafbeelding bepalen. CSS kan niet alleen worden gebruikt om de lay-out van een pagina op te maken, maar ook om functies zoals animaties en vervolgkeuzemenu's (drop-down menu's) toe te voegen.</p>
+            <h5>Waarom Cascading Style Sheets?</h5>
+            <p>Omdat het een stijlblad is dat verschillende stijlen toepast op een document, waarbij de stijlen van boven naar beneden worden toegepast (van cascade).</p>
+            <h5>CSS Vernieuwingen</h5>
+            <p>CSS is de afgelopen jaren steeds complexer geworden en kan inmiddels veel meer dan vroeger. Met het nieuwe zogenaamde flex en grid systeem kunnen we eenvoudig vernuftige layout-constructies maken. Deze layouts zijn responsief, werken soepel en zijn op alle schermgroottes goed te zien, van smartphone tot tv.</p>
+            <p>CSS grid is een tweedimensionale lay-outmethode die een gebied in rijen en kolommen verdeelt. Deze methode is zeer flexibel, zodat we alles kunnen aanpassen aan elk scherm.</p>
+            <p>CSS flex is een een-dimensionale lay-outmethode die werkt met flex-items. Deze flex-items kunnen in een rij of kolom gestapeld worden. Dit is afhankelijk van de flex-richting. Deze methode is ook zeer flexibel, zodat we de flex-items in verschillende richtingen kunnen neerzetten.</p>
+        </section>
+        <section id="basis">
+            <h2>CSS Declaration (verklaring)</h2>
+            <p>Een CSS-regelset bestaat uit een selector en een declaratieblok. De selector wijst naar het HTML-element dat u wilt opmaken. Het declaratieblok bevat een of meer declaraties, gescheiden door puntkomma's. Elke declaratie bevat een CSS-eigenschapsnaam en een waarde, gescheiden door een dubbele punt.</p>
+            <code>
+                p {
+                    &nbsp; color: red;
+                    &nbsp; text-align: center;
+                 }
+                
+            </code>
+            <p>
+                CSS-declaraties <mark>eindigen altijd met een puntkomma</mark> en <mark>declaratieblokken zijn omgeven door accolades</mark>. De volgorde van de declaratie is belangrijk. Wanneer meerdere declaraties dezelfde eigenschap hebben, wordt alleen de laatste gebruikt.</p>
+            <code>
+                p {
+                    &nbsp; color: red;
+                    &nbsp; color: blue; <mark>(deze wordt gebruikt)</mark>
+                    }
+                
+            </code>
+            <h2>CSS Selectors</h2>
+            <p>Met CSS maak je gebruik van verschillende selectors. Hiermee selecteer je de elementen waarop je stijl wilt toepassen. De selectors kunnen verschillende vormen aannemen, afhankelijk van de elementen waarop je wilt selecteren. </p>
+            <ul>
+                <li>Een elementselector: selecteert alle elementen van een bepaalde soort.</li>
+                <li>Een id-selector: selecteert een element met een bepaald id.</li>
+                <li>Een klasseselector: selecteert alle elementen met een bepaalde class.</li>
+                <li>Een pseudo-selector: selecteert elementen op basis van hun status of positie.</li>
+            </ul>
+            <h2>Elementselector</h2>
+            <p>De eenvoudigste selector is een elementselector. Met deze selector selecteer je alle elementen van een bepaald soort. Je gebruikt hiervoor de naam van het element. Denk bijvoorbeeld aan de HTML-variabele `&lt;h1>` (kop 1). </p>
+            <code>
+                h1 {
+                    &nbsp; property (eigenschap): value (waarde);
+                }
+
+            </code>
+            <h2>Id-selector</h2>
+            <p>Een id-selector in CSS is een aanduiding waarmee je kunt opgeven welke stijlen worden aangepast voor een element met een bepaalde id-waarde. Een id-selector wordt geschreven als een hashtag (#) gevolgd door de id van het element. In het onderstaande voorbeeld wordt de id #uniek gebruikt om de stijlen van het element met id="uniek" toe te passen.</p>
+            <code>
+                #uniek {
+                    &nbsp; background-color: yellow;
+                }
+
+            </code>
+            <h2>Klasseselector</h2>
+            <p>Een klasseselector in CSS is een aanduiding waarmee je kunt opgeven welke stijlen worden toegepast op een HTML-element met een class-attribute. Een klasseselector is een aanduiding die begint met een punt (.).In de onderstaande CSS-regel wordt de klasseselector ".groepje" gebruikt. Dit betekent dat de stijlen worden toegepast op alle HTML-elementen met de klasse "groepje".</p>
+            <code>
+                .groepje { 
+                    &nbsp; background-color: red;
+                }
+                
+            </code>
+            <h2>Een pseudo-selector</h2>
+            <p>Een pseudo-selector is een aanwijzing waarmee je kunt opgeven of je een bepaalde stijl wilt toepassen op een element dat in een bepaalde relatie tot een ander element staat. Een voorbeeld van een pseudo-selector is :hover, waarmee je kunt opgeven dat je een bepaalde stijl wilt toepassen op een element wanneer de muisaanwijzer eroverheen gaat.</p>
+            <code>
+                a:hover { 
+                    &nbsp; color: red;
+                }
+                
+            </code>
+        </section>
+    </article>
+    <script src="../../static/js/jquery-3.6.1.min.js"></script>
+    <!-- <script src="../../static/js/webslides.js"></script>
+    <script>
+        window.ws = new WebSlides();
+    </script> -->
+    <script src="../../static/js/main.js"></script>
+</body>
+
+</html>
