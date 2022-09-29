@@ -410,25 +410,32 @@ iframe {
 
 .noslides h1 {
     font-size: 2rem;
-    font-weight: 500;
+    font-weight: 700;
     text-align: left;
 }
 
 .noslides h2 {
     font-size: 1.75rem;
-    font-weight: 500;
+    font-weight: 600;
     text-align: left;
 }
 
 .noslides h3 {
     font-size: 1.5rem;
+    font-weight: 500;
     text-align: left;
 }
 
 .noslides h4 {
     font-size: 1.25rem;
+    font-weight: 500;
     text-align: left;
 }
+
+.noslides h5 {
+    font-weight: 500;
+}
+
 
 .mgmid {
     margin: 0 auto;
