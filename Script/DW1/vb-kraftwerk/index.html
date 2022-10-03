@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kraftwerk</title>
+    <style>
+        @import url('http://fonts.cdnfonts.com/css/sf-pixelate');
+
+        :root {
+            scroll-behavior: smooth;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #2B2A30;
+            font-family: monospace;
+            line-height: 1.5;
+        }
+
+        header,
+        h2 {
+            font-family: 'SF Pixelate', monospace;
+        }
+
+        header {
+            background-color: #eee;
+            color: #dc2525;
+            margin: 0 10%;
+        }
+
+        header h1 {
+            padding: 0 1em;
+        }
+
+        header>div {
+            display: flex;
+        }
+
+        header nav {
+            background-color: #ff3700;
+            padding: 0 1em;
+        }
+
+        h1 {
+            margin: 1em 0;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            padding: 1em;
+        }
+
+        nav ul li:hover {
+            background-color: rgba(255, 255, 255, 0.5)
+        }
+
+        nav a {
+            color: #eee;
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            color: blue;
+        }
+
+        main {
+            background-color: #CECECE;
+            color: #09072f;
+            margin: 0 10%;
+            margin-bottom: 2em;
+        }
+
+        section {
+            padding: 4em 4em 0 4em;
+        }
+
+        h2 {
+            margin-bottom: 1em;
+        }
+
+        p {
+            margin-bottom: 2em;
+            max-width: 100ch;
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+            margin: 0 auto;
+            margin-bottom: 1em;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        td {
+            border: 1px solid #333;
+            padding: 1em;
+        }
+
+        footer {
+            margin: 0 10%;
+            padding: 2em;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>Kraftwerk + 1 2 3 4 5 6 7 8</h1>
+        </div>
+        <nav>
+            <ul>
+                <a href="#home">
+                    <li>Home</li>
+                </a>
+                <a href="#concerts">
+                    <li>Concerts</li>
+                </a>
+                <a href="#merch">
+                    <li>Merch</li>
+                </a>
+                <a href="#gallery">
+                    <li>Gallery</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Home</h2>
+            <p>Kraftwerk (German: [ˈkʁaftvɛɐ̯k], lit. "power station") is a German band formed in Düsseldorf in 1970 by Ralf Hütter and Florian Schneider. Widely considered innovators and pioneers of electronic music, Kraftwerk were among the first successful acts to popularize the genre. The group began as part of West Germany's experimental krautrock scene in the early 1970s before fully embracing electronic instrumentation, including synthesizers, drum machines, and vocoders. Wolfgang Flür joined the band in 1974 and Karl Bartos in 1975, expanding the band to a quartet. </p>
+            <img src="images/home-foto.jpg" alt="" width="400">
+        </section>
+        <section id="concerts">
+            <h2>Concerts</h2>
+            <img src="https://kraftwerk.com/concerts/Assets/PIXEL-ROT-401.gif" alt="">
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            02 MAY 2022
+                        </td>
+                        <td>
+                            MILANO
+                        </td>
+                        <td>
+                            TEATRO DEGLI ARCIMBOLDI
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            03 MAY 2022
+                        </td>
+                        <td>
+                            MILANO
+                        </td>
+                        <td>
+                            TEATRO DEGLI ARCIMBOLDI
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            04 MAY 2022
+                        </td>
+                        <td>
+                            MILANO
+                        </td>
+                        <td>
+                            TEATRO DEGLI ARCIMBOLDI
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            05 MAY 2022
+                        </td>
+                        <td>
+                            MILANO
+                        </td>
+                        <td>
+                            TEATRO DEGLI ARCIMBOLDI
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            06 MAY 2022
+                        </td>
+                        <td>
+                            MILANO
+                        </td>
+                        <td>
+                            TEATRO DEGLI ARCIMBOLDI
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="merch">
+            <h2>Merch</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam porro esse pariatur ratione odio neque enim eum iure debitis. Quaerat commodi dolore cum? Asperiores in enim quos vero sequi! Nam.</p>
+        </section>
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum repellendus magni commodi nobis, iure at eveniet odit aliquam cum iste assumenda iusto quisquam, hic doloribus deleniti, provident possimus a officia.</p>
+        </section>
+    </main>
+
+    <footer>
+        <h5>Copyright Vincent Vander Cruyssen</h5>
+    </footer>
+</body>
+
+</html>
