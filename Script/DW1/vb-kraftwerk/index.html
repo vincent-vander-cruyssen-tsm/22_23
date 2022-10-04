@@ -23,6 +23,7 @@
             background-color: #2B2A30;
             font-family: monospace;
             line-height: 1.5;
+            margin: 0 10%;
         }
 
         header,
@@ -33,32 +34,32 @@
         header {
             background-color: #eee;
             color: #dc2525;
-            margin: 0 10%;
+        }
+
+        header div {
+            padding: 1em 2em;
         }
 
         header h1 {
-            padding: 0 1em;
+            display: inline;
         }
 
-        header>div {
-            display: flex;
+        header h2 {
+            display: inline;
+            letter-spacing: -0.3ch;
         }
 
         header nav {
-            background-color: #ff3700;
+            background-color: #f12704;
             padding: 0 1em;
         }
 
-        h1 {
-            margin: 1em 0;
-        }
-
         nav ul {
-            display: flex;
             list-style: none;
         }
 
         nav ul li {
+            display: inline-block;
             padding: 1em;
         }
 
@@ -69,6 +70,7 @@
         nav a {
             color: #eee;
             font-weight: 600;
+            text-decoration: none;
         }
 
         nav a:hover {
@@ -76,9 +78,8 @@
         }
 
         main {
-            background-color: #CECECE;
+            background-color: #ffffffd0;
             color: #09072f;
-            margin: 0 10%;
             margin-bottom: 2em;
         }
 
@@ -112,7 +113,7 @@
         }
 
         footer {
-            margin: 0 10%;
+            background-color: rgba(255, 255, 255, 0.5);
             padding: 2em;
         }
     </style>
@@ -121,7 +122,8 @@
 <body>
     <header>
         <div>
-            <h1>Kraftwerk + 1 2 3 4 5 6 7 8</h1>
+            <h1>Kraftwerk</h1>
+            <h2>+ 1 2 3 4 5 6 7 8</h2>
         </div>
         <nav>
             <ul>
@@ -216,12 +218,12 @@
         </section>
         <section id="gallery">
             <h2>Gallery</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum repellendus magni commodi nobis, iure at eveniet odit aliquam cum iste assumenda iusto quisquam, hic doloribus deleniti, provident possimus a officia.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum repellendus magni commodi nobis, iure at eveniet odit aliquam cum iste assumenda iusto quisquam, hic doloribus deleniti, provident possimus a officia. </p><br>
         </section>
     </main>
 
     <footer>
-        <h5>Copyright Vincent Vander Cruyssen</h5>
+        <h5>© Copyright Vincent Vander Cruyssen TSM</h5>
     </footer>
 </body>
 
