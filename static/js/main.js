@@ -8,11 +8,11 @@ $(".noslides section").after("<hr>");
 
 function calcAndShowTotal() {
     var total = 0;
-    $('.formgrid :checkbox:checked').each(function () {
+    $(':checked').each(function () {
         total++;
     });
-    $('#total').val(total);
+    $('.total').val(total);
 }
 
-$('.formgrid :checkbox').change(calcAndShowTotal).change();
-// $('#total').after(querySelectorAll('.formgrid :checkbox'));
+$(':checkbox').change(calcAndShowTotal);
+

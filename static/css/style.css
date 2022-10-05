@@ -392,6 +392,7 @@ input:hover {
 }
 
 .formgrid {
+    text-align: left;
     padding: 0 24%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -443,4 +444,16 @@ iframe {
 
 .noslides ul li {
     list-style-type: '↪ ';
+}
+
+[type="text"] {
+    width: 5ch;
+    height: 2em;
+}
+
+button {
+    text-transform: none;
+    font-size: 0.9rem;
+    height: auto;
+
 }
