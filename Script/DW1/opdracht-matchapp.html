@@ -20,68 +20,57 @@
             <p>Je gebruikt binnen de folder (voornaam_achternaam-matchapp) het HTML document (index.html) en images folder. In het HTML document heeft Emmet je de basisstructuur ("!" of "doc") gegeven waarin je de matching applicatie zal maken, door minstens gebruik te maken van de onderstaande elementen en attributen. Wanneer je alle checkboxes (selectievakjes) hebt aangevinkt heb je de volledige score van de opdracht behaald. </p>
             <p><a href="cursus-html_basis.html" target="_blank">Klik hier voor Cursus HTML basis en Spiekbriefje</a></p>
 
-            <div class="formgrid">
+            <form class="formgrid">
                 <div>
                     <h5>Elementen document</h5>
-                    <form>
-                        <label><input type="checkbox"> &lt;html> ... &lt;/html> </label> <br>
-                        <label><input type="checkbox"> &lt;head> ... &lt;/head> </label> <br>
-                        <label><input type="checkbox"> &lt;title> </label> <br>
-                        <label><input type="checkbox"> &lt;body> ... &lt;/body> </label>
-                    </form>
+                    <label><input type="checkbox"> &lt;html> ... &lt;/html> </label> <br>
+                    <label><input type="checkbox"> &lt;head> ... &lt;/head> </label> <br>
+                    <label><input type="checkbox"> &lt;title> </label> <br>
+                    <label><input type="checkbox"> &lt;body> ... &lt;/body> </label>
                 </div>
                 <div>
                     <h5>Elementen inhoudsverdeling</h5>
-                    <form>
-                        <label><input type="checkbox"> &lt;header> ... &lt;/header> </label> <br>
-                        <label><input type="checkbox"> &lt;main> ... &lt;/main> </label> <br>
-                        <label><input type="checkbox"> &lt;section id=""> ... &lt;/section> </label> <br>
-                    </form>
+                    <label><input type="checkbox"> &lt;header> ... &lt;/header> </label> <br>
+                    <label><input type="checkbox"> &lt;main> ... &lt;/main> </label> <br>
+                    <label><input type="checkbox"> &lt;section id=""> ... &lt;/section> </label> <br>
                 </div>
                 <div>
                     <h5>Elementen inhoudsstroom</h5>
-                    <form>
-                        <label><input type="checkbox"> &lt;h1>, &lt;h2>,... </label> <br>
-                        <label><input type="checkbox"> &lt;img src="" alt="" width=""> </label> <br>
-                        <label><input type="checkbox"> &lt;p> ... &lt;/p> </label> <br>
-                        <label><input type="checkbox"> &lt;a href=""> ... &lt;/a> </label> <br>
-                        <label><input type="checkbox"> &lt;ul> OF &lt;ol> met &lt;li> </label> <br>
-                    </form>
+                    <label><input type="checkbox"> &lt;h1>, &lt;h2>,... </label> <br>
+                    <label><input type="checkbox"> &lt;img src="" alt="" width=""> </label> <br>
+                    <label><input type="checkbox"> &lt;p> ... &lt;/p> </label> <br>
+                    <label><input type="checkbox"> &lt;a href=""> ... &lt;/a> </label> <br>
+                    <label><input type="checkbox"> &lt;ul> OF &lt;ol> met &lt;li> </label> <br>
                 </div>
                 <div>
                     <h5>Elementen formulier</h5>
-                    <form>
-                        <label><input type="checkbox"> &lt;form></label> <br>
-                        <label><input type="checkbox"> &lt;fieldset></label> <br>
-                        <label><input type="checkbox"> &lt;legend></label> <br>
-                        <label><input type="checkbox"> &lt;input></label> <br>
-                        <label><input type="checkbox"> &lt;textarea></label> <br>
-                        <label><input type="checkbox"> &lt;select></label> <br>
-                        <label><input type="checkbox"> &lt;option></label> <br>
-                        <label><input type="checkbox"> &lt;button></label> <br>
-                    </form>
+                    <label><input type="checkbox"> &lt;form></label> <br>
+                    <label><input type="checkbox"> &lt;fieldset></label> <br>
+                    <label><input type="checkbox"> &lt;legend></label> <br>
+                    <label><input type="checkbox"> &lt;input></label> <br>
+                    <label><input type="checkbox"> &lt;textarea></label> <br>
+                    <label><input type="checkbox"> &lt;select></label> <br>
+                    <label><input type="checkbox"> &lt;option></label> <br>
+                    <label><input type="checkbox"> &lt;button></label> <br>
                 </div>
                 <div>
                     <h5>Attributen formulier</h5>
-                    <form>
-                        <label><input type="checkbox"> type="radio"</label> <br>
-                        <label><input type="checkbox"> type="checkbox"</label> <br>
-                        <label><input type="checkbox"> type="number"</label> <br>
-                        <label><input type="checkbox"> name="" value=""</label> <br>
-                        <label><input type="checkbox"> cols="" rows="" placeholder=""</label> <br>
-                        <label><input type="checkbox"> type="submit" type="reset"</label> <br>
-                    </form>
+                    <label><input type="checkbox"> type="radio"</label> <br>
+                    <label><input type="checkbox"> type="checkbox"</label> <br>
+                    <label><input type="checkbox"> type="number"</label> <br>
+                    <label><input type="checkbox"> name="" value=""</label> <br>
+                    <label><input type="checkbox"> cols="" rows="" placeholder=""</label> <br>
+                    <label><input type="checkbox"> type="submit" type="reset"</label> <br>
                 </div>
                 <div>
                     <h5>Folderstructuur en naamgeving</h5>
-                    <form>
-                        <label><input type="checkbox"> voornaam_achternaam-matchapp <br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;/images/afbeelding.jpg ... <br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;index.html</label>
-                    </form>
-                    <input type="text" id="total" value="0" readonly>
+                    <label><input type="checkbox"> voornaam_achternaam-matchapp <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;/images/afbeelding.jpg ... <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;index.html</label>
+                    <h5>Totaal</h5>
+                    <input type="text" class="total" value="0" readonly> &nbsp; <button type="reset">&nbsp;reset&nbsp;</button> <br> <br>
                 </div>
-            </div>
+            </form>
         </section>
 
     </article>
