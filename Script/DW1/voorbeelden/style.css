@@ -1,0 +1,76 @@
+body {
+    background-color: LightSteelBlue;
+    color: SteelBlue;
+    font-family: 'Lucida Sans', sans-serif;
+}
+
+h2, p, ul li {
+    margin-bottom: 40px;
+}
+
+ul li {
+    color: Maroon;
+    list-style-type: '↪ ';
+}
+
+a {
+    color: Tomato;
+    text-decoration-line: none;
+}
+
+a:hover {
+    color: DodgerBlue;
+    text-decoration-line: underline;
+}
+
+header, main, footer {
+    background-color: Azure;
+    border-bottom: 2px solid LightSteelBlue;
+    margin: 0 10%;
+}
+
+header, .col, footer {
+    padding: 2vh 4vw;
+}
+
+header {
+    background-color: LightCyan;
+    border-radius: 10px 10px 0 0;
+}
+
+main li a {
+    background-color: Tomato;
+    color: White;
+    text-decoration-line: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+main li a:hover {
+    background-color: White;
+    color: Tomato;
+    text-decoration-line: underline;
+}
+
+#flexbox {
+    display: flex;
+    padding: 4% 0;
+    /* margin: 4% 0; */
+}
+
+.col {
+    /* background-color: Blue; */
+}
+
+.left {
+    width: 30%;
+}
+
+.right {
+    width: 70%;
+    border-left: 2px dotted LightSteelBlue;
+}
+
+footer {
+    border-radius: 0 0 10px 10px;
+}
