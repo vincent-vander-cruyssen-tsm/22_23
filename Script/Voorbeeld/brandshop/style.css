@@ -15,11 +15,13 @@ html, body {
 /* basis vormgeving */
 
 body {
-    background-color: White;
-    color: Black;
+    background-color: white;
+    color: black;
     font-family: 'Raleway', sans-serif;
+    line-height: 1.5;
 }
 
+main,
 main p {
     margin-bottom: 2em;
 }
@@ -39,7 +41,7 @@ h4 {
 }
 
 a:visited {
-    color: Black;
+    color: black;
 }
 
 video {
@@ -53,8 +55,8 @@ img {
 }
 
 .btn {
-    background-color: White;
-    color: Black;
+    background-color: white;
+    color: black;
     text-align: center;
     padding: 0.4rem 1.1rem;
     border-radius: 1rem;
@@ -64,32 +66,40 @@ img {
     filter: invert(25%);
 }
 
-.flexbox {
+.box {
     display: flex;
     flex-wrap: wrap;
-}
-
-.justify_sb {
     justify-content: space-between;
 }
 
-.align_c {
+.box--center {
     align-items: center;
 }
 
-.indent {
+.box--indent {
     padding: 0 4vw;
 }
 
-.col {
+.box__col--third {
     width: 31%;
     margin-bottom: 1.5rem;
+}
+
+.box__col--half {
+    width: 50%;
+    padding: 2rem;
+}
+
+.box__col--bgjoinus {
+    background-image: url("static/img/joinus-pic.webp");
+    background-size: cover;
+    background-position: right;
 }
 
 /* hoofding */
 
 header {
-    background-color: White;
+    background-color: white;
 }
 
 header div {
@@ -132,7 +142,7 @@ header .marquee {
 /* inhoud */
 
 main {
-    background-color: White;
+    background-color: white;
     padding: 0 10vw;
     border-top-color: #ddd;
     border-top-width: thin;
@@ -142,7 +152,7 @@ main {
 .videoframe {
     height: 30vh;
     overflow: hidden;
-    margin-bottom: 1.5rem;
+    margin-bottom: 3rem;
 }
 
 figure {
@@ -157,12 +167,20 @@ figure {
     left: 12%;
 }
 
+.highlights {
+    background-color: hsl(45, 40%, 92%);
+}
+
 /* footer */
 
 footer {
-    background-color: Black;
-    color: White;
+    background-color: #111;
+    color: white;
     padding: 4vh 10vw;
+}
+
+footer .box {
+    margin-bottom: 2rem;
 }
 
 footer ul {
@@ -170,5 +188,28 @@ footer ul {
 }
 
 footer ul li {
-    margin-bottom: 0.5em;
+    color: hsla(0, 0%, 100%, 0.8);
+    font-size: 0.8rem;
+    line-height: 2;
+}
+
+footer ul li:first-child {
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+footer ul:first-child li {
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.socials i {
+    color: hsla(0, 0%, 100%, 0.8);
+    font-size: 1.5rem;
+}
+
+.socials i:hover {
+    color: white;
 }
