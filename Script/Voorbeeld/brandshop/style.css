@@ -1,47 +1,51 @@
-/* imports en instellingen */
+/* instellingen */
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
+    padding: 0;
 }
 
 html, body {
     height: 100%;
 }
 
-/* basis vormgeving */
+/* vormgeving elementen */
 
 body {
-    background-color: white;
-    color: black;
+    background-color: #fff;
+    color: #000;
     font-family: 'Raleway', sans-serif;
     line-height: 1.5;
 }
 
-main,
-main p {
+main p, h4 {
     margin-bottom: 2em;
 }
 
-h2, h3 {
-    font-weight: 400;
-    margin-bottom: 1em;
+h2 {
+    margin: 1.5em 0;
+    font-weight: 500;
 }
 
 h3 {
     font-size: 1rem;
+    font-weight: 500;
 }
 
 h4 {
     text-transform: uppercase;
-    margin-bottom: 2em;
+}
+
+a {
+    color: #000;
+    text-decoration-line: none;
 }
 
 a:visited {
-    color: black;
+    color: #000;
 }
 
 video {
@@ -51,59 +55,55 @@ video {
 img {
     display: block;
     max-width: 100%;
-    margin-bottom: 1rem;
+}
+
+/* vormgeving classes */
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.indent {
+    margin: 0 auto;
+    width: 90%;
+}
+
+.flex-col {
+    flex: 1;
+}
+
+.bg-joinus {
+    background-image: url("static/img/joinus-pic.webp");
+    background-size: cover;
+    background-position: right;
 }
 
 .btn {
-    background-color: white;
-    color: black;
-    text-align: center;
-    padding: 0.4rem 1.1rem;
+    background-color: #fff;
     border-radius: 1rem;
+    padding: 0.4em 2ch;
+    text-align: center;
 }
 
 .btn:hover {
     filter: invert(25%);
 }
 
-.box {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.box--center {
-    align-items: center;
-}
-
-.box--indent {
-    padding: 0 4vw;
-}
-
-.box__col--third {
-    width: 31%;
-    margin-bottom: 1.5rem;
-}
-
-.box__col--half {
-    width: 50%;
-    padding: 2rem;
-}
-
-.box__col--bgjoinus {
-    background-image: url("static/img/joinus-pic.webp");
-    background-size: cover;
-    background-position: right;
-}
-
-/* hoofding */
+/* vormgeving hoofding */
 
 header {
-    background-color: white;
+    background-color: #fff;
 }
 
-header div {
-    padding: 1rem;
+.menu {
+    margin: 1.5rem 3rem;
 }
 
 header img {
@@ -115,14 +115,12 @@ header img:hover {
 }
 
 header nav li {
-    display: inline;
-    list-style-type: none;
+    display: inline-block;
 }
 
 header nav a {
+    padding: 2rem 1ch;
     font-size: 1.1rem;
-    text-decoration-line: none;
-    padding: 2rem 1rem;
 }
 
 header nav a:hover {
@@ -131,28 +129,43 @@ header nav a:hover {
 }
 
 header i {
-    padding: 0.5rem;
+    margin-left: 1.5ch;
 }
 
-header .marquee {
+header i:hover {
+    color: #666;
+}
+
+header input {
+    margin-left: 1ch;
+    border: #ddd 2px solid;
+    border-radius: 1rem;
+    padding: 0.5em 2ch;
+}
+
+header .promo {
+    border-top: #ddd thin solid;
+    border-bottom: #ddd thin solid;
+    padding: 1rem;
     background-color: #eee;
     text-align: center;
 }
 
-/* inhoud */
+/* vormgeving inhoud */
 
 main {
-    background-color: white;
     padding: 0 10vw;
-    border-top-color: #ddd;
-    border-top-width: thin;
-    border-top-style: solid;
+    background-color: #fff;
 }
 
 .videoframe {
-    height: 30vh;
     overflow: hidden;
     margin-bottom: 3rem;
+    max-height: 50vh;
+}
+
+main img {
+    margin-bottom: 1rem;
 }
 
 figure {
@@ -163,46 +176,57 @@ figure {
 
 #deals figcaption {
     position: absolute;
-    top: 72%;
-    left: 12%;
+    bottom: 3rem;
+    left: 3rem;
 }
 
 .highlights {
-    background-color: hsl(45, 40%, 92%);
+    background-color: #fed;
 }
 
-/* footer */
+.highlights .flex-col {
+    padding: 2rem;
+}
+
+/* vormgeving footer */
 
 footer {
+    margin-top: 3rem;
+    padding: 5% 10%;
     background-color: #111;
-    color: white;
-    padding: 4vh 10vw;
-}
-
-footer .box {
-    margin-bottom: 2rem;
+    color: #666;
 }
 
 footer ul {
-    list-style-type: none;
+    margin-bottom: 2rem;
 }
 
 footer ul li {
-    color: hsla(0, 0%, 100%, 0.8);
     font-size: 0.8rem;
     line-height: 2;
+    list-style-type: none;
 }
 
-footer ul li:first-child {
-    color: white;
+footer ul li:first-child a {
+    color: #fff;
     font-size: 1rem;
     font-weight: 600;
 }
 
-footer ul:first-child li {
-    color: white;
+footer ul:first-child li a {
+    color: #fff;
     font-size: 0.8rem;
     font-weight: 600;
+}
+
+footer a {
+    color: #ccc;
+}
+
+footer a:hover {
+    color: #fff;
+    text-decoration-line: underline;
+    text-underline-offset: 0.2em;
 }
 
 .socials i {
@@ -211,5 +235,5 @@ footer ul:first-child li {
 }
 
 .socials i:hover {
-    color: white;
+    color: #fff;
 }
