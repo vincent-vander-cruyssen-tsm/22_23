@@ -1,8 +1,12 @@
+/* instellingen */
+
 body {
     background-color: LightSteelBlue;
     color: SteelBlue;
     font-family: 'Lucida Sans', sans-serif;
 }
+
+/* vormgeving elementen */
 
 h2, p, ul li {
     margin-bottom: 40px;
@@ -33,10 +37,14 @@ header, .col, footer {
     padding: 2vh 4vw;
 }
 
+/* vormgeving header */
+
 header {
     background-color: LightCyan;
     border-radius: 10px 10px 0 0;
 }
+
+/* vormgeving main */
 
 main li a {
     background-color: Tomato;
@@ -63,13 +71,17 @@ main li a:hover {
 }
 
 .left {
-    width: 30%;
+    /* width: 30%; */
+    flex: 3;
 }
 
 .right {
-    width: 70%;
+    /* width: 70%; */
+    flex: 7;
     border-left: 2px dotted LightSteelBlue;
 }
+
+/* vormgeving footer */
 
 footer {
     border-radius: 0 0 10px 10px;
