@@ -25,12 +25,13 @@ main {
     margin: 0 10vw;
 }
 
-h1 {
+h1, h2 {
     margin-bottom: 1em;
 }
 
 ul {
     list-style-type: '↪ ';
+    margin-bottom: 2em;
 }
 
 li::marker {

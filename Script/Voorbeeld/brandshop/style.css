@@ -8,10 +8,6 @@
     padding: 0;
 }
 
-html, body {
-    height: 100%;
-}
-
 /* vormgeving elementen */
 
 body {
@@ -42,10 +38,6 @@ h4 {
 a {
     color: #000;
     text-decoration-line: none;
-}
-
-a:visited {
-    color: #000;
 }
 
 video {
@@ -79,12 +71,6 @@ img {
     flex: 1;
 }
 
-.bg-joinus {
-    background-image: url("static/img/joinus-pic.webp");
-    background-size: cover;
-    background-position: right;
-}
-
 .btn {
     background-color: #fff;
     border-radius: 1rem;
@@ -100,10 +86,17 @@ img {
 
 header {
     background-color: #fff;
+
 }
 
-.menu {
-    margin: 1.5rem 3rem;
+header .menu {
+    position: fixed;
+    z-index: 1;
+    border-bottom: #ddd thin solid;
+    width: 100%;
+    height: 6rem;
+    padding: 0 3rem;
+    background-color: #fff;
 }
 
 header img {
@@ -130,9 +123,11 @@ header nav a:hover {
 
 header i {
     margin-left: 1.5ch;
+    font-size: 1.1rem;
 }
 
 header i:hover {
+    transform: scale(1.1);
     color: #666;
 }
 
@@ -143,8 +138,11 @@ header input {
     padding: 0.5em 2ch;
 }
 
+.promo-container {
+    padding-top: 6rem;
+}
+
 header .promo {
-    border-top: #ddd thin solid;
     border-bottom: #ddd thin solid;
     padding: 1rem;
     background-color: #eee;
@@ -158,7 +156,9 @@ main {
     background-color: #fff;
 }
 
-.videoframe {
+/* herobanner */
+
+#herobanner .videoframe {
     overflow: hidden;
     margin-bottom: 3rem;
     max-height: 50vh;
@@ -168,7 +168,7 @@ main img {
     margin-bottom: 1rem;
 }
 
-figure {
+#deals figure {
     position: relative;
 }
 
@@ -184,8 +184,14 @@ figure {
     background-color: #fed;
 }
 
-.highlights .flex-col {
+#joinus .flex-col {
     padding: 2rem;
+}
+
+.bg-joinus {
+    background-image: url("static/img/joinus-pic.webp");
+    background-size: cover;
+    background-position: right;
 }
 
 /* vormgeving footer */
@@ -229,11 +235,11 @@ footer a:hover {
     text-underline-offset: 0.2em;
 }
 
-.socials i {
-    color: hsla(0, 0%, 100%, 0.8);
-    font-size: 1.5rem;
+footer i {
+    margin-left: 1ch;
+    font-size: 1.6rem;
 }
 
-.socials i:hover {
-    color: #fff;
+footer i:hover {
+    transform: scale(1.1);
 }
