@@ -149,6 +149,10 @@ header .promo {
     text-align: center;
 }
 
+header .promo:hover {
+    text-decoration-line: underline;
+}
+
 /* vormgeving inhoud */
 
 main {
@@ -164,32 +168,36 @@ main {
     max-height: 50vh;
 }
 
-main img {
+/* featured */
+
+#featured img {
     margin-bottom: 1rem;
 }
 
-#deals figure {
+#categories figure {
     position: relative;
 }
 
 /* een absolute gepositioneerd element wordt gepositioneerd ten opzichte van het eerste bovenliggende element dat iets anders als de standaard static position heeft */
 
-#deals figcaption {
+#categories figcaption {
     position: absolute;
     bottom: 3rem;
     left: 3rem;
 }
 
-.highlights {
+/* membership */
+
+#membership .highlights {
     background-color: #fed;
 }
 
-#joinus .flex-col {
+#membership .flex-col {
     padding: 2rem;
 }
 
-.bg-joinus {
-    background-image: url("static/img/joinus-pic.webp");
+#membership .bg-joinus {
+    background-image: url("static/img/joinus-bg.webp");
     background-size: cover;
     background-position: right;
 }
@@ -203,7 +211,7 @@ footer {
     color: #666;
 }
 
-footer ul {
+footer .flex-container {
     margin-bottom: 2rem;
 }
 
