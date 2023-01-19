@@ -1,2 +1,2 @@
 # 22_23
-Hi
+Cursusmateriaal en opdrachten voor Informatica (3,4,5) en Script (4,5)
