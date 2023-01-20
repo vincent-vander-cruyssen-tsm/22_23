@@ -1,8 +1,8 @@
 /* instellingen */
 
 body {
-    background-color: LightSteelBlue;
-    color: SteelBlue;
+    background-color: lightsteelblue;
+    color: steelblue;
     font-family: 'Lucida Sans', sans-serif;
 }
 
@@ -18,7 +18,7 @@ ul li {
 }
 
 a {
-    color: Tomato;
+    color: tomato;
     text-decoration-line: none;
 }
 
@@ -29,7 +29,7 @@ a:hover {
 
 header, main, footer {
     background-color: Azure;
-    border-bottom: 2px solid LightSteelBlue;
+    border-bottom: 2px solid lightsteelblue;
     margin: 0 10%;
 }
 
@@ -47,20 +47,20 @@ header {
 /* vormgeving main */
 
 main li a {
-    background-color: Tomato;
-    color: White;
+    background-color: tomato;
+    color: white;
     text-decoration-line: none;
     padding: 10px;
     border-radius: 5px;
 }
 
 main li a:hover {
-    background-color: White;
-    color: Tomato;
+    background-color: white;
+    color: tomato;
     text-decoration-line: underline;
 }
 
-#flexbox {
+#about {
     display: flex;
     padding: 4% 0;
     /* margin: 4% 0; */
@@ -78,7 +78,7 @@ main li a:hover {
 .right {
     /* width: 70%; */
     flex: 7;
-    border-left: 2px dotted LightSteelBlue;
+    border-left: 2px dotted lightsteelblue;
 }
 
 /* vormgeving footer */
