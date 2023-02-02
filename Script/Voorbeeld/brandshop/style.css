@@ -40,10 +40,6 @@ a {
     text-decoration-line: none;
 }
 
-video {
-    width: 100%;
-}
-
 img {
     display: block;
     max-width: 100%;
@@ -67,7 +63,7 @@ img {
     width: 90%;
 }
 
-.flex-col {
+.flex-item {
     flex: 1;
 }
 
@@ -167,6 +163,10 @@ main {
     max-height: 50vh;
 }
 
+video {
+    width: 100%;
+}
+
 /* featured */
 
 #featured img {
@@ -191,7 +191,7 @@ main {
     background-color: #fed;
 }
 
-#membership .flex-col {
+#membership .flex-item {
     padding: 2rem;
 }
 
