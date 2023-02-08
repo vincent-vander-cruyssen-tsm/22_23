@@ -49,7 +49,6 @@ img {
 
 .flex-container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     gap: 2rem;
 }
@@ -78,7 +77,7 @@ img {
     filter: invert(25%);
 }
 
-/* vormgeving hoofding */
+/* vormgeving header */
 
 header {
     background-color: #fff;
@@ -148,7 +147,7 @@ header .promo:hover {
     text-decoration-line: underline;
 }
 
-/* vormgeving inhoud */
+/* vormgeving main */
 
 main {
     padding: 0 10vw;
@@ -158,6 +157,7 @@ main {
 /* herobanner */
 
 #herobanner .videoframe {
+    position: relative;
     overflow: hidden;
     margin-bottom: 3rem;
     max-height: 50vh;
@@ -181,13 +181,13 @@ video {
 
 #categories figcaption {
     position: absolute;
-    bottom: 3rem;
-    left: 3rem;
+    bottom: 12%;
+    left: 15%;
 }
 
 /* membership */
 
-#membership .highlights {
+#membership .bgc-highlights {
     background-color: #fed;
 }
 
@@ -195,8 +195,8 @@ video {
     padding: 2rem;
 }
 
-#membership .bg-joinus {
-    background-image: url("static/img/joinus-bg.webp");
+#membership .bgd-joinus {
+    background-image: url("static/img/joinus.webp");
     background-size: cover;
     background-position: right;
 }
