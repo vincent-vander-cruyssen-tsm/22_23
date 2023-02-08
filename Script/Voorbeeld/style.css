@@ -13,7 +13,7 @@ h2, p, ul li {
 }
 
 ul li {
-    color: Maroon;
+    color: maroon;
     list-style-type: '↪ ';
 }
 
@@ -23,12 +23,12 @@ a {
 }
 
 a:hover {
-    color: DodgerBlue;
+    color: dodgerblue;
     text-decoration-line: underline;
 }
 
 header, main, footer {
-    background-color: Azure;
+    background-color: azure;
     border-bottom: 2px solid lightsteelblue;
     margin: 0 10%;
 }
@@ -40,7 +40,7 @@ header, .col, footer {
 /* vormgeving header */
 
 header {
-    background-color: LightCyan;
+    background-color: lightcyan;
     border-radius: 10px 10px 0 0;
 }
 
@@ -67,7 +67,7 @@ main li a:hover {
 }
 
 .col {
-    /* background-color: Blue; */
+    /* background-color: blue; */
 }
 
 .left {
