@@ -17,12 +17,9 @@ body {
     line-height: 1.5;
 }
 
-main p, h4 {
-    margin-bottom: 2em;
-}
-
 h2 {
-    margin: 1.5em 0;
+    margin-top: 2em;
+    margin-bottom: 1.5em;
     font-weight: 500;
 }
 
@@ -32,6 +29,7 @@ h3 {
 }
 
 h4 {
+    margin-bottom: 2em;
     text-transform: uppercase;
 }
 
@@ -59,7 +57,7 @@ img {
 
 .indent {
     margin: 0 auto;
-    width: 90%;
+    padding: 0 5vw;
 }
 
 .flex-item {
@@ -67,14 +65,16 @@ img {
 }
 
 .btn {
-    background-color: #fff;
+    margin-right: 2ch;
     border-radius: 1rem;
     padding: 0.4em 2ch;
+    background-color: #fff;
+    font-weight: 500;
     text-align: center;
 }
 
 .btn:hover {
-    filter: invert(25%);
+    filter: invert(0.25);
 }
 
 /* vormgeving header */
@@ -89,7 +89,7 @@ header .menu {
     border-bottom: #ddd thin solid;
     width: 100%;
     height: 6rem;
-    padding: 0 3rem;
+    padding: 0 5vw;
     background-color: #fff;
 }
 
@@ -132,7 +132,7 @@ header input {
     padding: 0.5em 2ch;
 }
 
-.promo-container {
+header .promo-container {
     padding-top: 6rem;
 }
 
@@ -150,7 +150,7 @@ header .promo:hover {
 /* vormgeving main */
 
 main {
-    padding: 0 10vw;
+    padding: 0 5vw;
     background-color: #fff;
 }
 
@@ -159,8 +159,16 @@ main {
 #herobanner .videoframe {
     position: relative;
     overflow: hidden;
-    margin-bottom: 3rem;
     max-height: 50vh;
+}
+
+#herobanner .cta-shop {
+    position: absolute;
+    bottom: 45%;
+    left: 5%;
+    transform: scale(1.25);
+    transform-origin: left;
+    filter: invert(1);
 }
 
 video {
@@ -170,14 +178,20 @@ video {
 /* featured */
 
 #featured img {
-    margin-bottom: 1rem;
+    margin-bottom: 1.25rem;
+}
+
+/* categories */
+
+#categories img {
+    border-radius: 0.5rem;
 }
 
 #categories figure {
     position: relative;
 }
 
-/* een absolute gepositioneerd element wordt gepositioneerd ten opzichte van het eerste bovenliggende element dat iets anders als de standaard static position heeft */
+/* → → een absolute gepositioneerd element wordt gepositioneerd ten opzichte van het eerste bovenliggende element dat iets anders als de standaard static position heeft ← ← */
 
 #categories figcaption {
     position: absolute;
@@ -201,16 +215,20 @@ video {
     background-position: right;
 }
 
+#membership p {
+    margin-bottom: 2.5em;
+}
+
 /* vormgeving footer */
 
 footer {
     margin-top: 3rem;
-    padding: 5% 10%;
+    padding: 5vw 10vw;
     background-color: #111;
     color: #666;
 }
 
-footer .flex-container {
+footer .flex-container:first-of-type {
     margin-bottom: 2rem;
 }
 
@@ -224,12 +242,14 @@ footer ul li:first-child a {
     color: #fff;
     font-size: 1rem;
     font-weight: 600;
+    text-transform: uppercase;
 }
 
 footer ul:first-child li a {
     color: #fff;
     font-size: 0.8rem;
     font-weight: 600;
+    text-transform: uppercase;
 }
 
 footer a {
