@@ -1,15 +1,27 @@
 /* instellingen */
 
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
 body {
     background-color: lightsteelblue;
     color: steelblue;
-    font-family: 'Lucida Sans', sans-serif;
+    font-family: 'Yusei Magic', sans-serif;
 }
 
 /* vormgeving elementen */
 
 h2, p, ul li {
     margin-bottom: 40px;
+}
+
+h3 {
+    margin: 10px 0;
 }
 
 ul li {
@@ -28,30 +40,35 @@ a:hover {
 }
 
 header, main, footer {
-    background-color: azure;
-    border-bottom: 2px solid lightsteelblue;
     margin: 0 10%;
+    border-bottom: 2px solid lightsteelblue;
+    background-color: azure;
 }
 
 header, .col, footer {
-    padding: 2vh 4vw;
+    padding: 4vh 4vw;
 }
 
 /* vormgeving header */
 
 header {
-    background-color: lightcyan;
+    margin-top: 2vh;
     border-radius: 10px 10px 0 0;
+    background-color: lightcyan;
 }
 
 /* vormgeving main */
 
+main ul {
+    margin-left: 5%;
+}
+
 main li a {
+    border-radius: 5px;
+    padding: 10px;
     background-color: tomato;
     color: white;
     text-decoration-line: none;
-    padding: 10px;
-    border-radius: 5px;
 }
 
 main li a:hover {
@@ -63,11 +80,10 @@ main li a:hover {
 #about {
     display: flex;
     padding: 4% 0;
-    /* margin: 4% 0; */
 }
 
 .col {
-    /* background-color: blue; */
+    flex: 1;
 }
 
 .left {
