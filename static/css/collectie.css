@@ -23,8 +23,7 @@ body {
 main {
     margin: 0 10vw;
     border: 1px solid #e7e7e7;
-    padding: 10vh 10vw;
-    padding-top: 5vh;
+    padding: 5vh 10vw;
     min-height: 100vh;
     background-color: white;
 }
