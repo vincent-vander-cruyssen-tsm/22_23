@@ -150,6 +150,7 @@ header .promo:hover {
 /* vormgeving main */
 
 main {
+    margin-bottom: 3rem;
     padding: 0 5vw;
     background-color: #fff;
 }
@@ -222,13 +223,12 @@ video {
 /* vormgeving footer */
 
 footer {
-    margin-top: 3rem;
     padding: 5vw 10vw;
     background-color: #111;
     color: #666;
 }
 
-footer .flex-container:first-of-type {
+footer .flex-container:first-child {
     margin-bottom: 2rem;
 }
 
@@ -238,7 +238,7 @@ footer ul li {
     list-style-type: none;
 }
 
-footer ul li:first-child a {
+footer ul li:first-child a, footer ul:first-child li a {
     color: #fff;
     font-size: 1rem;
     font-weight: 600;
@@ -246,10 +246,7 @@ footer ul li:first-child a {
 }
 
 footer ul:first-child li a {
-    color: #fff;
     font-size: 0.8rem;
-    font-weight: 600;
-    text-transform: uppercase;
 }
 
 footer a {
