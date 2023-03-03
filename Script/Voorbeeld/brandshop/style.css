@@ -66,9 +66,10 @@ img {
 }
 
 .btn {
+    display: inline-block;
     margin-right: 2ch;
     border-radius: 1rem;
-    padding: 0.4em 2ch;
+    padding: 0.3em 1.5ch;
     background-color: #fff;
     font-weight: 500;
     text-align: center;
@@ -186,6 +187,10 @@ video {
 
 #featured img:hover {
     transform: scale(1.02);
+}
+
+#featured .description {
+    gap: 0;
 }
 
 /* categories */
