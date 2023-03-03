@@ -47,6 +47,7 @@ img {
 
 .flex-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     gap: 2rem;
 }
@@ -180,6 +181,11 @@ video {
 
 #featured img {
     margin-bottom: 1.25rem;
+    transition: transform 150ms ease;
+}
+
+#featured img:hover {
+    transform: scale(1.02);
 }
 
 /* categories */
