@@ -40,7 +40,12 @@ a {
 
 img {
     display: block;
+    min-width: 3rem;
     max-width: 100%;
+}
+
+i:hover {
+    transform: scale(1.1);
 }
 
 /* vormgeving classes */
@@ -54,6 +59,15 @@ img {
 
 .align-center {
     align-items: center;
+}
+
+.self-center {
+    align-self: center;
+}
+
+.column {
+    flex-direction: column;
+    justify-content: start;
 }
 
 .indent {
@@ -77,6 +91,10 @@ img {
 
 .btn:hover {
     filter: invert(0.25);
+}
+
+.invert {
+    filter: invert(1);
 }
 
 /* vormgeving header */
@@ -123,7 +141,6 @@ header i {
 }
 
 header i:hover {
-    transform: scale(1.1);
     color: #666;
 }
 
@@ -239,7 +256,7 @@ footer {
     color: #666;
 }
 
-footer .flex-container:first-child {
+footer>.flex-container:first-child {
     margin-bottom: 2rem;
 }
 
@@ -271,11 +288,10 @@ footer a:hover {
 }
 
 footer i {
-    margin-left: 1ch;
     font-size: 1.6rem;
 }
 
-footer i:hover {
+footer img:hover {
     transform: scale(1.1);
 }
 
