@@ -1,0 +1,143 @@
+@import url("https://use.typekit.net/hfi1kak.css");
+
+:root {
+    --bgc-01: hsl(0, 0%, 9%);
+    --bgc-02: hsl(0, 0%, 13%);
+    --txt-01: hsl(0, 0%, 87%);
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bgc-01);
+    font-family: "owners-wide", sans-serif;
+    color: var(--txt-01);
+    line-height: 1.5;
+}
+
+h2 {
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5ch;
+}
+
+a {
+    text-decoration: none;
+    color: var(--txt-01);
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--bgc-02);
+}
+
+header h1 {
+    display: inline;
+}
+
+header img {
+    display: inline;
+    margin-right: 0.5rem;
+    width: 2.5rem;
+    filter: invert(0.9);
+}
+
+nav {
+    display: flex;
+}
+
+nav ul {
+    position: relative;
+    display: flex;
+    gap: 1rem;
+    list-style-type: none;
+}
+
+nav a {
+    display: block;
+    padding: 0.25rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    /* Pas dit aan naar je eigen kleurenpalet */
+}
+
+nav a:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+}
+
+.hamburger-menu {
+    cursor: pointer;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 1.5rem;
+    height: 1rem;
+}
+
+.hamburger-menu span {
+    height: 2px;
+    background-color: #fff;
+    /* Pas dit aan naar je eigen kleurenpalet */
+}
+
+main {
+    padding: 5vh 10vw;
+    /* Pas dit aan naar je eigen kleurenpalet */
+}
+
+#lineup {
+    text-align: center;
+}
+
+.band-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    gap: 1rem;
+}
+
+.band {
+    overflow: hidden;
+    /* Pas dit aan naar je eigen kleurenpalet */
+}
+
+.band img {
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    transition: all 60ms ease;
+}
+
+.band img:hover {
+    transform: scale(1.04);
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        position: fixed;
+        top: 5rem;
+        right: 0;
+        padding: 0 1rem;
+        height: 100%;
+        background-color: #222;
+        text-align: right;
+        flex-direction: column;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+}
