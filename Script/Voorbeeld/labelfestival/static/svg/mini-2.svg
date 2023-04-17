@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.4.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 575 575" style="enable-background:new 0 0 575 575;" xml:space="preserve">
+<style type="text/css">
+	.st0{clip-path:url(#SVGID_00000140713867142364165970000011293752215307429294_);}
+	.st1{fill:none;stroke:#000000;stroke-width:25;stroke-miterlimit:10;}
+</style>
+<g>
+	<defs>
+		<circle id="SVGID_1_" cx="287.5" cy="287.5" r="287.5"/>
+	</defs>
+	<clipPath id="SVGID_00000069381221955108864810000016199852117751776652_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+	<g style="clip-path:url(#SVGID_00000069381221955108864810000016199852117751776652_);">
+		<rect x="221.2" y="225" class="st1" width="128.8" height="125"/>
+		<polyline class="st1" points="346.5,350 160.1,350 160.1,162.5 412.5,162.5 412.5,575 		"/>
+		<polyline class="st1" points="475,107.9 475,537.5 87.5,537.5 		"/>
+		<polyline class="st1" points="362.5,412.5 37.5,412.5 37.5,100 537.5,100 537.5,537.5 		"/>
+		<line class="st1" x1="34.3" y1="37.5" x2="475" y2="37.5"/>
+		<line class="st1" x1="362.5" y1="475" x2="30.8" y2="475"/>
+		<line class="st1" x1="100" y1="362.5" x2="100" y2="150"/>
+	</g>
+</g>
+</svg>
