@@ -70,7 +70,6 @@ nav a {
     padding: 0.25rem;
     font-weight: 600;
     text-transform: uppercase;
-    /* Pas dit aan naar je eigen kleurenpalet */
 }
 
 nav a:hover {
@@ -90,12 +89,10 @@ nav a:hover {
 .hamburger-menu span {
     height: 2px;
     background-color: #fff;
-    /* Pas dit aan naar je eigen kleurenpalet */
 }
 
 main {
     padding: 5vh 10vw;
-    /* Pas dit aan naar je eigen kleurenpalet */
 }
 
 #lineup {
@@ -111,7 +108,6 @@ main {
 
 .band {
     overflow: hidden;
-    /* Pas dit aan naar je eigen kleurenpalet */
 }
 
 .band img {
@@ -123,6 +119,31 @@ main {
 
 .band img:hover {
     transform: scale(1.04);
+}
+
+footer {
+    background-color: #222;
+    padding: 1rem;
+    text-align: center;
+    color: #fff;
+}
+
+footer i {
+    font-size: 1.2rem;
+}
+
+.social-media {
+    margin-bottom: 1rem;
+}
+
+footer a {
+    margin: 0 0.5rem;
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
 }
 
 @media screen and (max-width: 768px) {
