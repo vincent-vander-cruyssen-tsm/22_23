@@ -54,10 +54,6 @@ header img {
     filter: invert(0.9);
 }
 
-nav {
-    display: flex;
-}
-
 nav ul {
     position: relative;
     display: flex;
@@ -92,22 +88,31 @@ nav a:hover {
 }
 
 main {
+    font-family: "owners-xwide", sans-serif;
     padding: 5vh 10vw;
-}
-
-#lineup {
-    text-align: center;
 }
 
 .band-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .band {
     overflow: hidden;
+    position: relative;
+}
+
+.band span {
+    position: absolute;
+    top: 0.5rem;
+    right: -1rem;
+    padding: 0 0.2rem;
+    background-color: var(--bgc-01);
+    color: var(--txt-01);
+    filter: invert();
+    z-index: 2;
 }
 
 .band img {
@@ -119,6 +124,10 @@ main {
 
 .band img:hover {
     transform: scale(1.04);
+}
+
+.band p {
+    text-align: right;
 }
 
 footer {
