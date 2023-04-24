@@ -3,8 +3,8 @@
 :root {
     --bgc-01: hsl(0, 0%, 90%);
     --bgc-02: hsl(0, 0%, 95%);
-    --btn-01: hsla(200, 32%, 64%, 0.8);
-    --btn-02: hsla(200, 32%, 56%, 0.8);
+    --btn-01: hsla(200, 45%, 64%, 0.8);
+    --btn-02: hsla(200, 45%, 56%, 0.8);
     --txt-01: hsl(0, 0%, 0%);
     --txt-02: hsl(0, 0%, 100%);
     scroll-behavior: smooth;
@@ -25,9 +25,10 @@ body {
 
 /* vormgeving elementen */
 
+
 h1 {
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
+    padding: 0.4rem 0;
+    font-size: 1.25rem;
 }
 
 h2 {
@@ -47,6 +48,7 @@ a {
 
 a:hover {
     text-decoration: underline;
+    text-underline-offset: 0.2rem;
 }
 
 img {
@@ -58,7 +60,6 @@ img {
 
 header {
     position: fixed;
-    padding: 1rem;
 }
 
 header nav ul {
@@ -69,13 +70,11 @@ header nav ul {
 
 header nav li {
     display: inline-block;
-    margin-bottom: 1rem;
 }
 
-header h1 a, header nav a {
+header a {
     display: block;
-    border-radius: 0.25rem;
-    padding: 1rem;
+    padding: 0.4rem 2ch;
     background-color: var(--btn-01);
     color: var(--txt-02);
 }
