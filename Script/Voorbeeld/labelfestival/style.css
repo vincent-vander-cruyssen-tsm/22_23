@@ -1,3 +1,5 @@
+/* algemene vormgeving */
+
 @import url("https://use.typekit.net/hfi1kak.css");
 
 :root {
@@ -14,8 +16,8 @@
 
 body {
     background-color: var(--bgc-01);
-    font-family: "owners-wide", sans-serif;
     color: var(--txt-01);
+    font-family: "owners-wide", sans-serif;
     line-height: 1;
 }
 
@@ -25,9 +27,18 @@ h2 {
     letter-spacing: 2.5ch;
 }
 
+p {
+    font-weight: 400;
+}
+
 a {
     text-decoration: none;
     color: var(--txt-01);
+}
+
+header nav a:hover, footer a:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
 }
 
 img {
@@ -63,14 +74,12 @@ header>div {
 header h1 {
     display: inline-block;
     margin-left: 0.2ch;
+    font-weight: 600;
 }
 
 header .logo {
     z-index: 7;
-}
-
-header .logo:hover {
-    animation: glows 100ms infinite linear;
+    justify-self: center;
 }
 
 header img {
@@ -79,7 +88,7 @@ header img {
     filter: invert(0.9);
 }
 
-#header-nav {
+header nav {
     justify-self: end;
 }
 
@@ -103,11 +112,6 @@ header nav a {
     padding: 0.25rem;
     font-weight: 600;
     text-transform: uppercase;
-}
-
-header nav a:hover {
-    text-decoration: underline;
-    text-underline-offset: 0.5rem;
 }
 
 #hamburger-menu {
@@ -148,10 +152,6 @@ main {
     background-position: center;
 }
 
-.grid-card:hover {
-    animation: scaler 200ms infinite alternate;
-}
-
 .act {
     z-index: 2;
     padding: 0.4rem 0;
@@ -186,15 +186,13 @@ main {
 }
 
 .grid-card :hover {
-    cursor: pointer;
-    user-select: none;
     background-image:
         repeating-linear-gradient(0deg,
             var(--txt-01),
             var(--txt-01) 0.1rem,
             transparent 0.1rem,
             transparent 1rem);
-    animation: lines 800ms infinite alternate;
+
 }
 
 .grid-card:nth-child(even) :hover {
@@ -208,12 +206,20 @@ main {
 
 /* footer vormgeving */
 
-footer a:hover {
-    text-decoration: underline;
+footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2rem;
 }
 
-.social-media {
-    margin-bottom: 1rem;
+footer ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+footer .social-media {
     text-align: center;
 }
 
@@ -222,18 +228,60 @@ footer i {
     font-size: 1.2rem;
 }
 
-.sitemap {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 1rem;
+footer .legal {
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
 
-footer li {
-    margin-bottom: 1rem;
+/* animation hovers */
+
+header .logo:hover, footer i:hover {
+    animation: ftr-glow_onoff 140ms infinite linear;
 }
 
-@media screen and (max-width: 768px) {
+@keyframes ftr-glow_onoff {
+    from {
+        filter: drop-shadow(0 0 0 transparent);
+    }
+
+    to {
+        filter: drop-shadow(0 0 1rem var(--txt-01));
+    }
+}
+
+.grid-card:hover {
+    animation: bgd-size_updown 200ms infinite alternate;
+}
+
+@keyframes bgd-size_updown {
+    from {
+        background-size: 125%;
+    }
+
+    to {
+        background-size: 150%;
+    }
+}
+
+.grid-card :hover {
+    cursor: pointer;
+    user-select: none;
+    animation: tfm-rotatex_round 800ms infinite alternate;
+}
+
+@keyframes tfm-rotatex_round {
+    from {
+        transform: rotateX(0);
+    }
+
+    to {
+        transform: rotateX(180deg);
+    }
+}
+
+/* smartphone vormgeving */
+
+@media screen and (max-width: 44rem) {
     .grid-container {
         grid-template-columns: 1fr;
     }
@@ -260,35 +308,5 @@ footer li {
         display: flex;
         width: 100%;
         background-color: var(--bgc-02);
-    }
-}
-
-@keyframes scaler {
-    from {
-        background-size: 125%;
-    }
-
-    to {
-        background-size: 150%;
-    }
-}
-
-@keyframes lines {
-    from {
-        transform: rotateX(0);
-    }
-
-    to {
-        transform: rotateX(3.142rad);
-    }
-}
-
-@keyframes glows {
-    from {
-        filter: drop-shadow(0 0 0 transparent);
-    }
-
-    to {
-        filter: drop-shadow(0 0 1rem var(--txt-01));
     }
 }
