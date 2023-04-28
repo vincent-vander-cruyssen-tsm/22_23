@@ -198,9 +198,9 @@ main {
     background-image:
         repeating-linear-gradient(-90deg,
             var(--txt-01),
-            var(--txt-01) 1vw,
-            transparent 1vw,
-            transparent 20vw);
+            var(--txt-01) 1vh,
+            transparent 1vh,
+            transparent 20vh);
 }
 
 /* footer vormgeving */
