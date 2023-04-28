@@ -189,18 +189,18 @@ main {
     background-image:
         repeating-linear-gradient(0deg,
             var(--txt-01),
-            var(--txt-01) 0.2rem,
-            transparent 0.2rem,
-            transparent 1.8rem);
+            var(--txt-01) 1vh,
+            transparent 1vh,
+            transparent 20vh);
 }
 
 .grid-card:nth-child(even) :hover {
     background-image:
         repeating-linear-gradient(-90deg,
             var(--txt-01),
-            var(--txt-01) 0.2rem,
-            transparent 0.2rem,
-            transparent 1.8rem);
+            var(--txt-01) 1vw,
+            transparent 1vw,
+            transparent 20vw);
 }
 
 /* footer vormgeving */
@@ -208,7 +208,6 @@ main {
 footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    align-items: center;
     gap: 2rem;
 }
 
@@ -219,6 +218,7 @@ footer ul {
 }
 
 footer .social-media {
+    align-self: center;
     text-align: center;
 }
 
@@ -235,7 +235,7 @@ footer .legal {
 /* animation hovers */
 
 header .logo:hover, footer i:hover {
-    animation: ftr-glow_onoff 140ms infinite linear;
+    animation: ftr-glow_onoff 280ms infinite linear;
 }
 
 @keyframes ftr-glow_onoff {
@@ -249,7 +249,7 @@ header .logo:hover, footer i:hover {
 }
 
 .grid-card:hover {
-    animation: bgd-size_updown 200ms infinite alternate;
+    animation: bgd-size_updown 400ms infinite alternate;
 }
 
 @keyframes bgd-size_updown {
@@ -258,23 +258,24 @@ header .logo:hover, footer i:hover {
     }
 
     to {
-        background-size: 150%;
+        background-size: 135%;
     }
 }
 
 .grid-card :hover {
     cursor: pointer;
     user-select: none;
-    animation: tfm-rotatex_round 800ms infinite alternate;
+    animation: tfm-rotatex_round 4s infinite linear;
 }
 
 @keyframes tfm-rotatex_round {
     from {
-        transform: rotateX(0);
+        /* transform: rotateX(0); */
     }
 
     to {
-        transform: rotateX(180deg);
+        /* transform: rotateX(180deg); */
+        background-position: 100vw 100vh;
     }
 }
 
