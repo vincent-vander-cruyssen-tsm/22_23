@@ -203,6 +203,50 @@ main {
             transparent 20vh);
 }
 
+/* act vormgeving */
+
+.flex-container {
+    display: flex;
+    gap: 2rem;
+}
+
+.flex-item {
+    flex: 1;
+}
+
+#act h3, #act h4, #act p {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: var(--txt-01);
+    color: var(--bgc-01);
+    text-align: center;
+}
+
+#act h3 {
+    font-size: 2rem;
+}
+
+#act .social-media {
+    margin-bottom: 1rem;
+}
+
+#act p {
+    margin: 0 10ch;
+    text-align: left;
+    line-height: 1.5;
+}
+
+#act .embed {
+    width: 50%;
+    margin: 0 auto;
+}
+
+#act iframe {
+    margin-top: 1rem;
+    width: 100%;
+    aspect-ratio: 3 / 2;
+}
+
 /* footer vormgeving */
 
 footer {
@@ -217,12 +261,12 @@ footer ul {
     gap: 1rem;
 }
 
-footer .social-media {
+.social-media {
     align-self: center;
     text-align: center;
 }
 
-footer i {
+i {
     margin: 0 0.5rem;
     font-size: 1.2rem;
 }
@@ -234,7 +278,7 @@ footer .legal {
 
 /* animation hovers */
 
-header .logo:hover, footer i:hover {
+header .logo:hover, i:hover {
     animation: ftr-glow_onoff 280ms infinite linear;
 }
 
