@@ -231,7 +231,8 @@ main {
 }
 
 #act p {
-    margin: 0 10ch;
+    max-width: 54ch;
+    margin: 0 auto;
     text-align: left;
     line-height: 1.5;
 }
