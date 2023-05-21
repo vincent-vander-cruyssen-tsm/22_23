@@ -28,7 +28,9 @@ body {
 }
 
 header, main {
-    margin: 5vh 5vw;
+    margin: 0 auto;
+    padding: 5vh 5vw;
+    max-width: 1920px;
 }
 
 a {
@@ -42,6 +44,10 @@ a:hover {
 
 /* header */
 
+main {
+    padding-top: 0;
+}
+
 header {
     position: sticky;
     z-index: 2;
@@ -52,7 +58,7 @@ header {
 }
 
 header h1 {
-    border-right: 0.1rem dashed var(--bgc-02);
+    border-right: 3px dotted var(--bgc-02);
     padding: 0.5rem 2rem 0.5rem 0;
 }
 
@@ -62,7 +68,7 @@ header nav li {
 
 header nav li a {
     display: inline-block;
-    border-right: 0.1rem dashed var(--bgc-02);
+    border-right: 3px dotted var(--bgc-02);
     padding: 0.5rem 4vw;
     background-color: var(--bgc-01);
 }
