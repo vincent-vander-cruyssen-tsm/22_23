@@ -160,6 +160,7 @@ main h2 {
 
 .img-frame {
     overflow: hidden;
+    border-radius: 0.5rem;
     margin-bottom: 1rem;
 }
 
