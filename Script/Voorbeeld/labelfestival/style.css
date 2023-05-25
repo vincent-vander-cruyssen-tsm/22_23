@@ -66,8 +66,8 @@ header {
     align-items: end;
 }
 
-header>div {
-    z-index: 6;
+header>*:first-child {
+    z-index: 4;
     align-self: center;
 }
 
@@ -78,7 +78,7 @@ header h1 {
 }
 
 header .logo {
-    z-index: 7;
+    z-index: 4;
     justify-self: center;
 }
 
@@ -102,7 +102,6 @@ header nav li:last-child a:hover {
 }
 
 header nav ul {
-    position: relative;
     display: flex;
     gap: 1rem;
 }
@@ -114,19 +113,26 @@ header nav a {
     text-transform: uppercase;
 }
 
-#hamburger-menu {
+header input#burger {
     display: none;
 }
 
-.hamburger-menu {
-    position: absolute;
+header label[for="burger"] {
+    position: fixed;
+    z-index: 3;
     top: 0;
     right: 0;
     display: none;
-    padding: 0.6rem;
-    font-size: 1.5rem;
+    width: 100%;
+    padding: 1rem 1ch;
+    background-color: var(--bgc-02);
     text-align: right;
     cursor: pointer;
+}
+
+header label[for="burger"] i {
+    margin: 0;
+    font-size: 1.25rem;
 }
 
 /* main vormgeving */
@@ -135,13 +141,13 @@ main {
     font-family: "owners-xwide", sans-serif;
 }
 
-.grid-container {
+#lineup .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
 }
 
-.grid-card {
+#lineup .grid-card {
     position: relative;
     display: grid;
     grid-template-columns: 1fr auto;
@@ -325,33 +331,40 @@ header .logo:hover, i:hover {
 }
 
 /* smartphone vormgeving */
+@media (width <=1000px) {
+    #lineup .grid-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
 
-@media screen and (max-width: 44rem) {
-    .grid-container {
-        grid-template-columns: 1fr;
+@media (width <=750px) {
+    header {
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+
+    header label[for="burger"] {
+        display: block;
     }
 
     header nav ul {
         position: fixed;
-        z-index: 4;
-        top: 2.5rem;
+        z-index: 3;
+        top: 3rem;
         right: 0;
         display: none;
-        flex-direction: column;
+        padding-right: 1ch;
         width: 100%;
         background-color: var(--bgc-02);
         text-align: right;
+        user-select: none;
     }
 
-    #hamburger-menu {
-        display: block;
-    }
-
-    .hamburger-menu {
-        position: fixed;
-        z-index: 4;
+    header input#burger:checked+label[for="burger"]+nav ul {
         display: flex;
-        width: 100%;
-        background-color: var(--bgc-02);
+        flex-direction: column;
+    }
+
+    #lineup .grid-container {
+        grid-template-columns: 1fr;
     }
 }
